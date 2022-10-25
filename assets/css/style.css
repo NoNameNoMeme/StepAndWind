@@ -1666,3 +1666,19 @@ h6 {
   font-size: 13px;
   color: #ddd;
 }
+
+/* МОИ ПРАВКИ */
+
+.signup-btn {
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: #f6d52f;
+  border: 0;
+  color: #fff;
+}
+
+.signup-btn:hover {
+  background-color: #e0072f;
+}
