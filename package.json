@@ -1,0 +1,19 @@
+{
+  "name": "stepandwind",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000S\u0000t\u0000e\u0000p\u0000A\u0000n\u0000d\u0000W\u0000i\u0000n\u0000d\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoNameNoMeme/StepAndWind.git"
+  },
+  "author": "Khasan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoNameNoMeme/StepAndWind/issues"
+  },
+  "homepage": "https://github.com/NoNameNoMeme/StepAndWind#readme"
+}
