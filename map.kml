@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <ExtendedData>
+            <Data name="creator">
+                <value>
+                    <![CDATA[Yandex Map Constructor]]>
+                </value>
+            </Data>
+        </ExtendedData>
+        <name>
+            <![CDATA[Степная история ]]>
+        </name>
+        <description>
+            <![CDATA[Карта фестиваля по случаю дня рождения медоварни Степь и Ветер ]]>
+        </description>
+        <Folder>
+            <Placemark>
+                <name>
+                    <![CDATA[Atlas coffee]]>
+                </name>
+                <description>
+                    <![CDATA[Кофейня]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ff595959</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/img/metka.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.10141819580058,51.763199601989946</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Comicz Era]]>
+                </name>
+                <description>
+                    <![CDATA[Магазин комиксов]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ff595959</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/img/metka.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.101482568816955,51.76305646855286</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Jawsspot]]>
+                </name>
+                <description>
+                    <![CDATA[крафтовый бар]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ff595959</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/img/metka.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.10423987968415,51.758455983551244</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[CraftBeerShop]]>
+                </name>
+                <description>
+                    <![CDATA[магазин-бар крафтового пива]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ff595959</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/img/metka.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.102088748054086,51.764199858987695</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Светлый]]>
+                </name>
+                <description>
+                    <![CDATA[крафтовый бар]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ff595959</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/img/metka.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.100506244735186,51.766818562749975</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Дом]]>
+                </name>
+                <description>
+                    <![CDATA[крафтовый бар]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ff595959</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/img/metka.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.104956700043275,51.761764502229276</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[LongWay]]>
+                </name>
+                <description>
+                    <![CDATA[Место проведения фестиваля]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ff595959</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/img/metka.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.10529398782677,51.76453812722521</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Method]]>
+                </name>
+                <description>
+                    <![CDATA[крафтовый бар]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ff595959</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/img/metka.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.095490513877145,51.76642539248534</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Мост Европа-Азия]]>
+                </name>
+                <description />
+                <Style>
+                    <IconStyle>
+                        <color>ff595959</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/img/metka.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.107152758673806,51.753142952384465</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Памятник Чкалову]]>
+                </name>
+                <description />
+                <Style>
+                    <IconStyle>
+                        <color>ff595959</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/img/metka.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.10632127387915,51.75465448569528</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[памятник Пушкин-Даль]]>
+                </name>
+                <description />
+                <Style>
+                    <IconStyle>
+                        <color>ff595959</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/img/metka.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.09947493536835,51.76494005150618</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Оренбургский государственный областной драматический театр им. М. Горького]]>
+                </name>
+                <description />
+                <Style>
+                    <IconStyle>
+                        <color>ff595959</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/img/metka.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.10286792977205,51.76155062728905</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Оренбургский государственный областной театр кукол]]>
+                </name>
+                <description />
+                <Style>
+                    <IconStyle>
+                        <color>ff595959</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/img/metka.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.10144635899379,51.76227297141245</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Елизаветинские ворота]]>
+                </name>
+                <description />
+                <Style>
+                    <IconStyle>
+                        <color>ff595959</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/img/metka.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.10664256339174,51.75490843559385</coordinates>
+                </Point>
+            </Placemark>
+        </Folder>
+    </Document>
+</kml>
