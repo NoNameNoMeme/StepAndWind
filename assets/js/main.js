@@ -235,6 +235,10 @@
       event.relatedTarget.getAttribute("data-signup");
   });
 
+  on("show.bs.modal", "#plug-modal", function (event) {
+    select("#plug-modal #plug").value =
+      event.relatedTarget.getAttribute("data-plug");
+  });
   /**
    * Animation on scroll
    */

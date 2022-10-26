@@ -384,7 +384,7 @@
                       type="button"
                       class="signup-btn"
                       data-bs-toggle="modal"
-                      data-bs-target="#signup-modal"
+                      data-bs-target="#plug-modal"
                       data-signup="craftBeerShop-bar"
                     >
                       Записаться
@@ -420,6 +420,11 @@
                   <h4>Степь и ветер</h4>
                   <p>Экскурсия на производство</p>
                 </div>
+                <div class="col-md-3 text-center">
+                  <a href="https://www.google.com" target="_blank">
+                    <button class="buy-btn" type="button">Купить билет</button>
+                  </a>
+                </div>
               </div>
 
               <div class="row schedule-item">
@@ -432,9 +437,9 @@
                   <button
                       type="button"
                       class="signup-btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#signup-modal"
-                      data-signup="craftBeerShop-bar"
+                      data-bs-toggle="modal" 
+                      data-bs-target="#plug-modal"
+                      data-signup="ural-bridge"
                     >
                       Записаться
                     </button>
@@ -452,8 +457,8 @@
                       type="button"
                       class="signup-btn"
                       data-bs-toggle="modal"
-                      data-bs-target="#signup-modal"
-                      data-signup="craftBeerShop-bar"
+                      data-bs-target="#plug-modal"
+                      data-signup="majorpayn-bar"
                     >
                       Записаться
                     </button>
@@ -476,6 +481,11 @@
                 <div class="col-md-7">
                   <h4>No_name</h4>
                   <p>Вечеринка по случаю Дня Рождения Степь и Ветер / Хедлайнер / Диджей Сет от пивоваров</p>
+                </div>
+                <div class="col-md-3 text-center">
+                  <a href="https://www.google.com" target="_blank">
+                    <button class="buy-btn" type="button">Купить билет</button>
+                  </a>
                 </div>
               </div>
 
@@ -546,9 +556,9 @@
                     class="form-select"
                   >
                     <option value="">-- Выберите мероприятие --</option>
-                    <option value="light-bar">Дегустация сидров от Токсово</option>
-                    <option value="method-bar">Дегустация от пивоварни Coma</option>
                     <option value="craftBeerShop-bar">Соревнование по поеданию острых перцев</option>
+                    <option value="ural-bridge">Экскурсия по историческому центру Оренбурга с доктором исторических наук Бурлуцкой Е.В.</option>
+                    <option value="majorpayn-bar">Памятные татуировки по эскизам</option>
                   </select>
                 </div>
                 <div class="text-center mt-3">
@@ -560,6 +570,37 @@
         </div>
       </div>
       <!-- /.modal для signup -->
+
+      <!-- Modal для заглушки plug -->
+      <div id="plug-modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Скоро...</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body" style="visibility: hidden">
+              <form action="#">
+                <div class="form-group mt-3">
+                  <select
+                    id="plug"
+                    name="plug"
+                    class="form-select"
+                  >
+                  <option value="">Здесь ничего нет</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal для заглушки plug -->
 
       <!-- ======= Venue Section ======= -->
       <section id="venue">
