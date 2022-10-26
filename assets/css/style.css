@@ -1572,11 +1572,55 @@ h6 {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #f6d52f;
+  background-color: #f6a02f;
   border: 0;
   color: #fff;
+  box-shadow: 1px 1px 3px rgb(70, 70, 70);
+  max-width: 202.22px;
+  width: 100%;
 }
 
 .signup-btn:hover {
-  background-color: #e0072f;
+  color: #fff;
+  background-color: #f66e2f;
+}
+
+.free-btn {
+  font-size: 15px;
+  border-radius: 40px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: #f6d52f;
+  border: 0;
+  color: #323232;
+  cursor: default;
+}
+
+.free-btn:hover {
+  cursor: default;
+}
+
+.buy-btn {
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: #e55656;
+  border: 0;
+  color: #fff;
+  box-shadow: 1px 1px 3px rgb(70, 70, 70);
+  max-width: 202.22px;
+  width: 100%;
+}
+
+.buy-btn:hover {
+  background-color: #dd2a2a;
+}
+
+.buy-btn:visited {
+  color: #fff;
+}
+
+.schedule-item a {
+  color: #fff;
 }
