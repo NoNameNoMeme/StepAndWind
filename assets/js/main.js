@@ -231,8 +231,8 @@
   });
 
   on("show.bs.modal", "#signup-modal", function (event) {
-    select("#signup-modal #ticket-type").value =
-      event.relatedTarget.getAttribute("data-ticket-type");
+    select("#signup-modal #signup").value =
+      event.relatedTarget.getAttribute("data-signup");
   });
 
   /**
