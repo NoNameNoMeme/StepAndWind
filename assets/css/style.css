@@ -1645,3 +1645,9 @@ h6 {
 .buy-tickets__subtitle {
   color: #000;
 }
+
+/* СПОНСОРЫ */
+
+.supporters__margin {
+  margin-bottom: 100px;
+}
