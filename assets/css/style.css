@@ -128,7 +128,6 @@ h6 {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
-  color: #9195a2;
 }
 
 .section-with-bg {
@@ -1202,13 +1201,16 @@ h6 {
 
 #buy-tickets .card .card-title {
   margin: 10px 0;
-  font-size: 14px;
+  font-size: 30px;
   letter-spacing: 1px;
   font-weight: bold;
+  color: #000;
 }
 
 #buy-tickets .card .card-price {
-  font-size: 48px;
+  font-size: 30px;
+  color: #000;
+
   margin: 0;
 }
 
@@ -1227,11 +1229,11 @@ h6 {
   transition: all 0.2s;
   background-color: #f6d52f;
   border: 0;
-  color: #fff;
+  color: #000;
 }
 
 #buy-tickets .card .btn:hover {
-  background-color: #e0072f;
+  background-color: #ecc813;
 }
 
 #buy-tickets #buy-ticket-modal input,
@@ -1623,4 +1625,22 @@ h6 {
 
 .schedule-item a {
   color: #fff;
+}
+
+/* БИЛЕТЫ */
+
+.card__subtitle {
+  font-size: 20px;
+}
+
+.li__item {
+  font-weight: bold;
+}
+
+.buy-tickets__title {
+  color: #000;
+}
+
+.buy-tickets__subtitle {
+  color: #000;
 }
