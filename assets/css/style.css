@@ -1624,3 +1624,7 @@ h6 {
 .schedule-item a {
   color: #fff;
 }
+
+.section-header p.section-header__subtitle {
+  color: #000;
+}
