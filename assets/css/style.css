@@ -43,7 +43,8 @@ h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
-  color: #0e1b4d;
+  /*color: #0e1b4d;*/
+  color: #000;
 }
 
 .main-page {
@@ -109,7 +110,8 @@ h6 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #f6d52f;
+  /*background: #f6d52f;*/
+  background: #fbf138;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -163,7 +165,8 @@ h6 {
 }
 
 #header #logo h1 span {
-  color: #f6d52f;
+  /*color: #f6d52f;*/
+  color: #fbf138;
 }
 
 #header #logo h1 a,
@@ -188,11 +191,13 @@ h6 {
 --------------------------------------------------------------*/
 .buy-tickets {
   color: #000;
-  background: #f6d52f;
+  /*background: #f6d52f;*/
+  background: #fbf138;
   padding: 7px 22px;
   margin: 0 0 0 15px;
   border-radius: 50px;
-  border: 2px solid #f6d52f;
+  /*border: 2px solid #f6d52f;*/
+  border: 2px solid #fbf138;
   transition: all ease-in-out 0.3s;
   font-weight: 500;
   line-height: 1;
@@ -527,7 +532,8 @@ h6 {
 }
 
 #hero h1 span {
-  color: #f6d52f;
+  /*color: #f6d52f;*/
+  color: #fbf138;
 }
 
 @media (max-width: 991px) {
@@ -551,7 +557,7 @@ h6 {
 #hero .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#f6d52f 50%, rgba(101, 111, 150, 0.15) 52%);
+  background: radial-gradient(#fbf138 50%, rgba(101, 111, 150, 0.15) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -633,11 +639,13 @@ h6 {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #f6d52f;
+  /*border: 2px solid #f6d52f;*/
+  border: 2px solid #fbf138;
 }
 
 #hero .about-btn:hover {
-  background: #f6d52f;
+  /*background: #f6d52f;*/
+  background: #fbf138;
   color: #fff;
 }
 
@@ -843,7 +851,8 @@ h6 {
   border: none;
   border-radius: 50px;
   font-weight: 600;
-  background-color: #0e1b4d;
+  /*background-color: #0e1b4d;*/
+  background-color: #62acee;
   color: #fff;
   padding: 10px 100px;
 }
@@ -867,8 +876,10 @@ h6 {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #f6d52f;
-  color: #fff;
+  /*background-color: #f6d52f;*/
+  background-color: #fbf138;
+  /*color: #fff;*/
+  color: #323232;
 }
 
 #schedule .sub-heading {
@@ -1593,7 +1604,8 @@ h6 {
   border-radius: 40px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #f6d52f;
+  /*background-color: #f6d52f;*/
+  background-color: #fbf138;
   border: 0;
   color: #323232;
   cursor: default;
