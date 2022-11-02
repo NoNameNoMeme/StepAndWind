@@ -1651,3 +1651,7 @@ h6 {
 .supporters__margin {
   margin-bottom: 100px;
 }
+
+#supporters .supporter-logo.black {
+  background-color: #000;
+}
