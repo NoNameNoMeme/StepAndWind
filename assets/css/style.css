@@ -1640,17 +1640,7 @@ h6 {
   color: #fff;
 }
 
-/* БИЛЕТЫ */
-
-.card__subtitle {
-  font-size: 20px;
-}
-
-.li__item {
-  font-weight: bold;
-}
-
-.buy-tickets__title {
+.section-header p.section-header__subtitle {
   color: #000;
 }
 
