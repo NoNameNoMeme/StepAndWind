@@ -128,7 +128,6 @@ h6 {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
-  color: #9195a2;
 }
 
 .section-with-bg {
@@ -697,8 +696,8 @@ h6 {
 #about h2 {
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 10px;
-  color: #fff;
+  margin-bottom: 15px;
+  color: #eee;
 }
 
 #about h3 {
@@ -713,6 +712,7 @@ h6 {
   font-size: 14px;
   margin-bottom: 20px;
   color: #fff;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -1202,13 +1202,16 @@ h6 {
 
 #buy-tickets .card .card-title {
   margin: 10px 0;
-  font-size: 14px;
+  font-size: 30px;
   letter-spacing: 1px;
   font-weight: bold;
+  color: #000;
 }
 
 #buy-tickets .card .card-price {
-  font-size: 48px;
+  font-size: 30px;
+  color: #000;
+
   margin: 0;
 }
 
@@ -1227,11 +1230,11 @@ h6 {
   transition: all 0.2s;
   background-color: #f6d52f;
   border: 0;
-  color: #fff;
+  color: #000;
 }
 
 #buy-tickets .card .btn:hover {
-  background-color: #e0072f;
+  background-color: #ecc813;
 }
 
 #buy-tickets #buy-ticket-modal input,
