@@ -871,6 +871,8 @@ h6 {
 @media (max-width: 767px) {
   #schedule .nav-tabs a {
     padding: 8px 50px;
+    margin-bottom: 10px;
+    margin-right: 5px;
   }
 }
 
