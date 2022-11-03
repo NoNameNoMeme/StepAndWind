@@ -1750,6 +1750,19 @@ h6 {
   margin: 0;
 }
 
+#supporters .supporter-logo {
+  height: 150px;
+}
+
+.img-fluid__gallery {
+  max-width: 100%;
+}
+
+.img-fluid {
+  max-width: 20%;
+  height: auto;
+}
+
 @media (max-width: 991px) {
   .carousel {
     margin: 0;
@@ -1766,9 +1779,23 @@ h6 {
     background: rgba(255, 255, 255, 0.5);
     height: 170px;
   }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .section-header h2 {
+    font-size: 26px;
+  }
 }
 
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
   filter: invert(100%);
+}
+
+.carousel-control-next.white,
+.carousel-control-prev.white {
+  filter: invert(0%);
 }
