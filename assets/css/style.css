@@ -177,12 +177,12 @@ h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 70px;
 }
 
 @media (max-width: 992px) {
   #header #logo img {
-    max-height: 30px;
+    max-height: 70px;
   }
 }
 
@@ -725,6 +725,7 @@ h6 {
   margin-bottom: 12px;
   color: #fff;
   text-align: justify;
+  text-indent: 15px;
 }
 
 #about p span {
@@ -736,7 +737,7 @@ h6 {
 # Speakers Section
 --------------------------------------------------------------*/
 #speakers {
-  padding: 60px 0 30px 0;
+  padding: 30px 0;
 }
 
 #speakers .speaker {
@@ -1662,7 +1663,7 @@ h6 {
 /* СПОНСОРЫ */
 
 .supporters__margin {
-  margin-bottom: 100px;
+  margin-bottom: 0;
 }
 
 #supporters .supporter-logo.black {
@@ -1787,6 +1788,35 @@ h6 {
 
   .section-header h2 {
     font-size: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  #speakers h2 {
+    display: none;
+  }
+
+  #speakers p {
+    font-size: 20px;
+    color: #000;
+  }
+
+  #schedule h2 {
+    display: none;
+  }
+
+  #schedule p {
+    font-size: 20px;
+    color: #000;
+  }
+
+  #venue h2 {
+    display: none;
+  }
+
+  #venue p {
+    font-size: 20px;
+    color: #000;
   }
 }
 
