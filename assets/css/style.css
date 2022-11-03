@@ -99,7 +99,7 @@ h6 {
 /* Sections Header
 --------------------------------*/
 .section-header {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   position: relative;
   padding-bottom: 20px;
 }
@@ -379,6 +379,10 @@ h6 {
 
   .navbar ul {
     display: none;
+  }
+
+  .carousel {
+    margin: 0;
   }
 }
 
@@ -1049,7 +1053,7 @@ h6 {
   border-bottom: 1px solid #e0e5fa;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.5);
-  height: 160px;
+  height: 300px;
 }
 
 #supporters .supporter-logo:hover img {
@@ -1666,7 +1670,7 @@ h6 {
 }
 
 .section-header.section-header__gallery {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 /* ГАЛЛЕРЕЯ */
@@ -1736,4 +1740,35 @@ h6 {
 
 .gallery .venue-gallery:hover img {
   transform: scale(1.1);
+}
+
+.carousel {
+  margin: 0 25%;
+}
+
+.carousel.supporters__carousel {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .carousel {
+    margin: 0;
+  }
+
+  #supporters .supporter-logo {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #e0e5fa;
+    border-bottom: 1px solid #e0e5fa;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.5);
+    height: 170px;
+  }
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(100%);
 }
