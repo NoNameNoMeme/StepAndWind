@@ -684,7 +684,7 @@ h6 {
 # About Section
 --------------------------------------------------------------*/
 #about {
-  background: url("../img/about-bg.png");
+  /* background: url("../img/about-bg.png"); */
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -700,7 +700,8 @@ h6 {
 
 #about:before {
   content: "";
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.7); */
+  background-color: #fff;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -712,7 +713,8 @@ h6 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 15px;
-  color: #eee;
+  /* color: #eee; */
+  color: #000;
 }
 
 #about h3 {
@@ -726,7 +728,8 @@ h6 {
 #about p {
   font-size: 14px;
   margin-bottom: 12px;
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
   text-align: justify;
   text-indent: 15px;
 }
@@ -1450,14 +1453,16 @@ h6 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #101522;
+  /* background: #101522; */
+  background: #363636;
   padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #040919;
+  /* background: #040919; */
+  background: #000;
   padding: 60px 0 30px 0;
 }
 
@@ -1608,17 +1613,20 @@ h6 {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #f6a02f;
+  /* background-color: #f6a02f; */
+  background-color: #f6d52f;
   border: 0;
-  color: #fff;
+  /* color: #fff; */
+  color: #323232;
   box-shadow: 1px 1px 3px rgb(70, 70, 70);
   max-width: 202.22px;
   width: 100%;
 }
 
 .signup-btn:hover {
-  color: #fff;
-  background-color: #f66e2f;
+  /* color: #fff; */
+  /* background-color: #f66e2f; */
+  background-color: #f6e22f;
 }
 
 .free-btn {
