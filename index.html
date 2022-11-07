@@ -464,7 +464,7 @@
       <!-- /.modal для заглушки plug -->
 
       <!-- ======= Venue Section ======= -->
-      <section id="venue">
+      <!-- <section id="venue">
         <div class="container-fluid" data-aos="fade-up">
           <div class="section-header">
             <h2>Место встречи</h2>
@@ -480,6 +480,18 @@
                 allowfullscreen
               ></iframe>
             </div>
+          </div>
+        </div>
+      </section> -->
+      <section id="venue">
+        <div class="container-fluid" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Место встречи</h2>
+            <p class="section-header__subtitle">Адреса локаций всех 3 дней фестиваля</p>
+          </div>
+  
+          <div class="row g-0">
+            <div class="col-lg-12 venue-map" id="map"></div>
           </div>
         </div>
       </section>
@@ -1423,6 +1435,38 @@
         </div>
       </div>
     </footer>
+
+    <!-- MAP -->
+
+    <!-- <section id="venue">
+      <div class="container-fluid" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Место встречи</h2>
+          <p class="section-header__subtitle">Адреса локаций всех 3 дней фестиваля</p>
+        </div>
+
+        <div class="row g-0">
+          <div class="col-lg-12 venue-map" id="map"></div>
+        </div>
+      </div>
+    </section> -->
+
+
+    <script
+        src="https://api-maps.yandex.ru/2.1/?apikey=b5c30a99-018a-4b78-8251-34d80f77b461&lang=ru_RU"
+        type="text/javascript"
+    ></script>
+
+    <script src="js/map_init.js" type="text/javascript"></script>
+    <!-- <script type="text/javascript">
+          newHeight = Math.floor(document.body.offsetHeight / 2);
+          newWidth = Math.floor(document.getElementById("title").offsetWidth);
+          document.getElementById('map').style.width = `${newWidth}px`;
+          document.getElementById('map').style.height = `${newHeight}px`;
+    </script> -->
+
+    <!-- End MAP -->
+
     <!-- End  Footer -->
 
     <a
