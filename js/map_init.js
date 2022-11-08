@@ -21,7 +21,7 @@ function init() {
     )
     .then(onGeoXmlLoad);
 
-  // Обработчик загрузки XML-файлов.
+  // Обработчик загрузки XML-файлов.d
   function onGeoXmlLoad(res) {
     myMap.geoObjects.add(res.geoObjects);
     if (res.mapState) {
