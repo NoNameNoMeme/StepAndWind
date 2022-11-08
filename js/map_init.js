@@ -15,9 +15,13 @@ function init() {
   myMap.container.fitToViewport();
   // Загрузка XML данных.
   // Функция определяет формат файла (KML, GPX или YMapsML) автоматически.
-  ymaps.geoXml.load("http://fest.stepiveter.ru/map.kml").then(onGeoXmlLoad);
+  ymaps.geoXml
+    .load(
+      "https://getfile.dokpub.com/yandex/get/{https://disk.yandex.ru/d/qnoGl-ks7m1fTQ}"
+    )
+    .then(onGeoXmlLoad);
 
-  // Обработчик загрузки XML-файлов.
+  // Обработчик загрузки XML-файлов.d
   function onGeoXmlLoad(res) {
     myMap.geoObjects.add(res.geoObjects);
     if (res.mapState) {
