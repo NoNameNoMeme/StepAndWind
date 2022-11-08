@@ -17,7 +17,7 @@ function init() {
   // Функция определяет формат файла (KML, GPX или YMapsML) автоматически.
   ymaps.geoXml
     .load(
-      "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/qnoGl-ks7m1fTQ"
+      "https://fest.stepiveter.ru/kml/map.kml"
     )
     .then(onGeoXmlLoad);
 

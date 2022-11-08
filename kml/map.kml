@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <ExtendedData>
+            <Data name="creator">
+                <value>
+                    <![CDATA[Yandex Map Constructor]]>
+                </value>
+            </Data>
+        </ExtendedData>
+        <name>
+            <![CDATA[Степная История]]>
+        </name>
+        <description />
+        <Folder>
+            <Placemark>
+                <name>
+                    <![CDATA[Method]]>
+                </name>
+                <description>
+                    <![CDATA[Бар, паб; </br><br/>Володарского 8, Оренбург, Россия]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ffff981e</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/assets/img/blue_map.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.09545296295152,51.76644161859793</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Светлый бар]]>
+                </name>
+                <description>
+                    <![CDATA[Бар, паб; </br><br/>Пролетарская, Оренбург, Россия]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ffff981e</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/assets/img/blue_map.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.100511609153365,51.76682480351059</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[CraftBeerShop]]>
+                </name>
+                <description>
+                    <![CDATA[Бар, паб; </br><br/>Пролетарской 22, Оренбург, Россия]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ffff981e</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/assets/img/blue_map.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.1021497683091,51.76418862494541</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Jawsspot]]>
+                </name>
+                <description>
+                    <![CDATA[Бар, паб; </br><br/>ул. Кирова 33, Оренбург, Россия]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ffff981e</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/assets/img/blue_map.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.105578972534595,51.7646712702253</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Дом]]>
+                </name>
+                <description>
+                    <![CDATA[Бар </br><br/>ул. Ленинская д. 46, Оренбург, Россия]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ffff981e</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/assets/img/blue_map.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.1049285368483,51.76181193740821</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Горожане]]>
+                </name>
+                <description>
+                    <![CDATA[Бар, паб; </br><br/>Загородное ш., 36/2с4, Оренбург, Россия]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ffff981e</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/assets/img/blue_map.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.171111,51.833136</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Atlas Coffee]]>
+                </name>
+                <description>
+                    <![CDATA[Кофейня; </br><br/>Советская ул., 34, Оренбург, Россия]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ff4345ed</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/assets/img/grey_map.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.101415,51.763194</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[ReFrame coffee]]>
+                </name>
+                <description>
+                    <![CDATA[Кофейня; </br><br/>Советская ул., 36, Оренбург, Россия]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ff4345ed</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/assets/img/grey_map.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.102009,51.763619</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Инжир]]>
+                </name>
+                <description>
+                    <![CDATA[Ресторан; </br><br/>просп. Победы, 2/2, Оренбург, Россия]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ff4345ed</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/assets/img/grey_map.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.105036,51.771044</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Camon]]>
+                </name>
+                <description>
+                    <![CDATA[Кафе; </br><br/>ул. 9 Января, 56, Оренбург, Россия]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ff4345ed</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/assets/img/grey_map.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.096467,51.765563</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Экскурссия от профессора д.и.н Бурлуцкой Е.В..]]>
+                </name>
+                <description />
+                <Style>
+                    <IconStyle>
+                        <color>ff1e93ff</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/assets/img/yellow_map.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.10634289359274,51.75456760520707</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Художественная экспозиция с дегустацией сидров и мёда]]>
+                </name>
+                <description />
+                <Style>
+                    <IconStyle>
+                        <color>ff1e93ff</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/assets/img/yellow_map.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.09917871331352,51.763159755743516</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[Вечеринка по случаю дня рождения Степь и Ветер]]>
+                </name>
+                <description />
+                <Style>
+                    <IconStyle>
+                        <color>ff1e93ff</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/assets/img/yellow_map.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.10397450303212,51.76905113688185</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark>
+                <name>
+                    <![CDATA[John Bull]]>
+                </name>
+                <description>
+                    <![CDATA[Тату-салон; </br><br/>ул. Кирова, 5, Оренбург, Россия]]>
+                </description>
+                <Style>
+                    <IconStyle>
+                        <color>ff1e93ff</color>
+                        <Icon>
+                            <href>https://fest.stepiveter.ru/assets/img/yellow_map.png</href>
+                        </Icon>
+                        <hotSpot x="7" y="28" xunits="pixels" yunits="insetPixels" />
+                    </IconStyle>
+                </Style>
+                <Point>
+                    <coordinates>55.094822,51.76215</coordinates>
+                </Point>
+            </Placemark>
+        </Folder>
+    </Document>
+</kml>
