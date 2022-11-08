@@ -1829,7 +1829,16 @@ h6 {
     display: none;
   }
 
+  #eat h2 {
+    display: none;
+  }
+
   #schedule p {
+    font-size: 20px;
+    color: #000;
+  }
+
+  #eat p {
     font-size: 20px;
     color: #000;
   }
@@ -1881,4 +1890,135 @@ h6 {
 
 #dots:hover {
   cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+# Eat Section
+--------------------------------------------------------------*/
+#eat {
+  padding: 60px 0 60px 0;
+}
+
+#eat .nav-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+#eat .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#eat .nav-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #818080;
+  /* background-color: #0e1b4d; */
+  /*background-color: #62acee;*/
+  color: #fff;
+  padding: 10px 100px;
+}
+
+@media (max-width: 991px) {
+  #eat .nav-tabs a {
+    padding: 8px 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  #eat .nav-tabs a {
+    padding: 8px 50px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  #eat .nav-tabs a {
+    padding: 8px 30px;
+  }
+}
+
+#eat .nav-tabs a.active {
+  background-color: #f6d52f;
+  /*background-color: #fbf138;*/
+  color: #fff;
+  /*color: #323232;*/
+}
+
+#eat .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto 20px auto;
+}
+
+@media (min-width: 991px) {
+  #eat .sub-heading {
+    width: 75%;
+  }
+}
+
+#eat .tab-pane {
+  transition: ease-in-out 0.2s;
+}
+
+#eat .schedule-item {
+  border-bottom: 1px solid #cad4f6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+#eat .schedule-item:hover {
+  background-color: #fff;
+}
+
+#eat .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#eat .schedule-item .speaker {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#eat .schedule-item .speaker img {
+  height: 100%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+#eat .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#eat .schedule-item h4 span {
+  font-style: italic;
+  color: #19328e;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#eat .schedule-item p {
+  font-style: italic;
+  color: #152b79;
+  margin-bottom: 0;
+}
+
+.schedule-item p span {
+  font-size: 16px;
+  color: #000;
 }
