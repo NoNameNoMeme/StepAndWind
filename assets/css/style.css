@@ -689,7 +689,7 @@ h6 {
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 60px 0 40px 0;
+  padding: 60px 0 0 0;
 }
 
 @media (min-width: 1024px) {
@@ -734,10 +734,10 @@ h6 {
   text-indent: 15px;
 }
 
-#about p span {
+/* #about p span {
   text-decoration: underline;
   font-weight: 700;
-}
+} */
 
 /*--------------------------------------------------------------
 # Speakers Section
@@ -1860,4 +1860,21 @@ h6 {
 
 .braslet:hover {
   cursor: pointer;
+}
+
+#more {
+  display: none;
+}
+
+.read-more-btn {
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  background-color: #f6d52f;
+  padding: 5px 10px;
+}
+
+#dots {
+  font-size: 18px;
+  font-weight: 600;
 }
