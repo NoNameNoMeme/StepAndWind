@@ -1853,3 +1853,11 @@ h6 {
 .carousel-control-prev.white {
   filter: invert(0%);
 }
+
+.braslet {
+  text-decoration: underline;
+}
+
+.braslet:hover {
+  cursor: pointer;
+}
