@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/NoNameNoMeme/StepAndWind/issues"
   },
-  "homepage": "https://github.com/NoNameNoMeme/StepAndWind#readme"
+  "homepage": "https://github.com/NoNameNoMeme/StepAndWind#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0"
+  }
 }

@@ -1784,7 +1784,7 @@ h6 {
 }
 
 .img-fluid {
-  max-width: 20%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -1802,16 +1802,20 @@ h6 {
     border-bottom: 1px solid #e0e5fa;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.5);
-    height: 170px;
+    height: 140px;
   }
 
   .img-fluid {
-    max-width: 100%;
+    max-width: 250%;
     height: auto;
   }
 
   .section-header h2 {
     font-size: 26px;
+  }
+
+  #supporters .glide__arrow {
+    top: 100%;
   }
 }
 
@@ -2020,5 +2024,9 @@ h6 {
 
 .schedule-item p span {
   font-size: 16px;
+  color: #000;
+}
+
+#supporters .glide__arrow {
   color: #000;
 }
