@@ -157,6 +157,10 @@ h6 {
   height: 70px;
 }
 
+#header.header-scrolled .hidden {
+  display: block;
+}
+
 #header #logo h1 {
   font-size: 36px;
   margin: 0;
@@ -1888,8 +1892,11 @@ h6 {
 }
 
 #dots {
-  font-size: 18px;
+  text-align: center;
+  display: block;
+  font-size: 24px;
   font-weight: 600;
+  color: #000;
 }
 
 #dots:hover {
@@ -2029,4 +2036,8 @@ h6 {
 
 #supporters .glide__arrow {
   color: #000;
+}
+
+.hidden {
+  display: none;
 }
