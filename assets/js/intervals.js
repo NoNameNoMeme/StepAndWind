@@ -20,7 +20,6 @@ function sendForm(formHTML) {
   }
   const formDataObj = {};
   form.forEach((value, key) => (formDataObj[key] = value));
-  console.dir(formDataObj);
   const config = {
     headers: {
       "Content-Type": "multipart/form-data",
@@ -47,16 +46,11 @@ function getIntervals(btn) {
 
       const dataArray = response.data.data;
 
-      console.log(dataArray);
-
       const modalId = btn.dataset.bsTarget;
-      console.log(modalId);
 
       const modal = document.querySelector(modalId);
-      console.log(modal);
 
       const modalSelect = modal.querySelector("select");
-      console.log(modalSelect);
 
       let intervalsArray;
       dataArray.forEach((interval) => {
