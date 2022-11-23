@@ -66,6 +66,8 @@
   <!-- GLIDE JS -->
   <link rel="stylesheet" type="text/css" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
   <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+  <!-- AXIOS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
 
   <body>
@@ -272,7 +274,8 @@
                 <div class="col-md-3 text-center">
                   <button
                       type="button"
-                      class="signup-btn"
+                      class="signup-btn intervals-btn"
+                      data-type="peppers"
                       data-bs-toggle="modal"
                       data-bs-target="#hotpepper-modal"
                       data-signup="craftBeerShop-bar"
@@ -294,7 +297,8 @@
                 <div class="col-md-3 text-center">
                   <button
                       type="button"
-                      class="signup-btn"
+                      class="signup-btn intervals-btn"
+                      data-type="lambik"
                       data-bs-toggle="modal"
                       data-bs-target="#lambic-modal"
                       data-signup="craftBeerShop-bar"
@@ -348,7 +352,8 @@
                 <div class="col-md-3 text-center">
                   <button
                       type="button"
-                      class="signup-btn"
+                      class="signup-btn intervals-btn"
+                      data-type="walk"
                       data-bs-toggle="modal" 
                       data-bs-target="#bridge-modal"
                       data-signup="ural-bridge"
@@ -369,11 +374,14 @@
                 </div>
                 <div class="col-md-3 text-center">
                   <button
+                      id="tattoo-button"
                       type="button"
-                      class="signup-btn"
+                      class="signup-btn intervals-btn"
+                      data-type="tattoes"
                       data-bs-toggle="modal"
                       data-bs-target="#tattoo-modal"
                       data-signup="majorpayn-bar"
+                      
                     >
                       Записаться
                     </button>
@@ -396,9 +404,9 @@
                 <div class="col-md-2"><time>18:00</time></div>
                 <div class="col-md-7">
                   <a">
-                    <h4>Бродилка</h4>
+                    <h4>Jawsspot</h4>
                   </a>
-                  <p>Те самые прикольные сидры (г. Москва)</p>
+                  <p>Презентация с дегустацией от Сидерии и Бродилка</p>
                   <p><span>Свободный вход</span></p>
                   
                 </div>
@@ -524,29 +532,41 @@
               ></button>
             </div>
             <div class="modal-body">
-              <form method="POST" action="#">
+              <form class="needs-validation" novalidate>
                 <div class="form-group">
                   <input
                     type="text"
                     class="form-control"
-                    name="your-name"
+                    name="name"
                     placeholder="Имя"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="surname"
+                    placeholder="Фамилия"
+                    required
                   />
                 </div>
                 <div class="form-group mt-3">
                   <input
                     type="email"
                     class="form-control"
-                    name="your-email"
+                    name="email"
                     placeholder="Почта"
+                    required
                   />
                 </div>
                 <div class="form-group mt-3">
                   <input
                     type="tel"
                     class="form-control"
-                    name="your-tel"
+                    name="phone"
                     placeholder="Телефон"
+                    required
                   />
                 </div>
                 <div class="form-group mt-3">
@@ -556,26 +576,26 @@
                     name="checkbox"
                     onchange="document.getElementById('submit').disabled = !this.checked;"
                   />
-                  <label for="checkbox">Text Input</label>
+                  <label for="checkbox">Вся ответственность лежит на мне</label>
                 </div>
-                <!-- <div class="form-group mt-3">
+                <input type="text" name="type" value="peppers" hidden/>
+
+                <div class="form-group mt-3">
                   <select
                     id="signup"
                     name="signup"
                     class="form-select"
-                  >
-                    <option value="">-- Выберите мероприятие --</option>
-                    <option value="craftBeerShop-bar">Соревнование по поеданию острых перцев</option>
-                    <option value="ural-bridge">Экскурсия по историческому центру Оренбурга с доктором исторических наук Бурлуцкой Е.В.</option>
-                    <option value="majorpayn-bar">Памятные татуировки по эскизам</option>
+                    required
+                  >   
                   </select>
-                </div> -->
+                </div>
                 <div class="text-center mt-3">
-                  <button type="submit"
+                  <button 
+                  type="button"
                   id="submit"
                   name="submit"
                   disabled="disabled"
-                  class="signup-btn">Записаться</button>
+                  class="signup-btn submit-btn">Записаться</button>
                 </div>
               </form>
             </div>
@@ -598,50 +618,61 @@
               ></button>
             </div>
             <div class="modal-body">
-              <form method="POST" action="#">
+              <form class="needs-validation" novalidate>
                 <div class="form-group">
                   <input
                     type="text"
                     class="form-control"
-                    name="your-name"
+                    name="name"
                     placeholder="Имя"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="surname"
+                    placeholder="Фамилия"
+                    required
                   />
                 </div>
                 <div class="form-group mt-3">
                   <input
                     type="email"
                     class="form-control"
-                    name="your-email"
+                    name="email"
                     placeholder="Почта"
+                    required
                   />
                 </div>
                 <div class="form-group mt-3">
                   <input
                     type="tel"
                     class="form-control"
-                    name="your-tel"
+                    name="phone"
                     placeholder="Телефон"
+                    required
                   />
                 </div>
+                <input type="text" name="type" value="lambik" hidden/>
 
-                <!-- <div class="form-group mt-3">
+                <div class="form-group mt-3">
                   <select
                     id="signup"
-                    name="signup"
+                    name="time"
                     class="form-select"
+                    required
                   >
-                    <option value="">-- Выберите мероприятие --</option>
-                    <option value="craftBeerShop-bar">Соревнование по поеданию острых перцев</option>
-                    <option value="ural-bridge">Экскурсия по историческому центру Оренбурга с доктором исторических наук Бурлуцкой Е.В.</option>
-                    <option value="majorpayn-bar">Памятные татуировки по эскизам</option>
                   </select>
-                </div> -->
+                </div>
 
                 <div class="text-center mt-3">
-                  <button type="submit"
+                  <button 
+                  type="button"             
                   id="submit"
                   name="submit"
-                  class="signup-btn">Записаться</button>
+                  class="signup-btn submit-btn">Записаться</button>
                 </div>
               </form>
             </div>
@@ -664,50 +695,61 @@
               ></button>
             </div>
             <div class="modal-body">
-              <form method="POST" action="#">
+              <form class="needs-validation" novalidate>
                 <div class="form-group">
                   <input
                     type="text"
                     class="form-control"
-                    name="your-name"
+                    name="name"
                     placeholder="Имя"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="surname"
+                    placeholder="Фамилия"
+                    required
                   />
                 </div>
                 <div class="form-group mt-3">
                   <input
                     type="email"
                     class="form-control"
-                    name="your-email"
+                    name="email"
                     placeholder="Почта"
+                    required
                   />
                 </div>
                 <div class="form-group mt-3">
                   <input
                     type="tel"
                     class="form-control"
-                    name="your-tel"
+                    name="phone"
                     placeholder="Телефон"
+                    required
                   />
                 </div>
+                <input type="text" name="type" value="walk" hidden/>
 
-                <!-- <div class="form-group mt-3">
+                <div class="form-group mt-3">
                   <select
                     id="signup"
-                    name="signup"
+                    name="time"
                     class="form-select"
+                    required
                   >
-                    <option value="">-- Выберите мероприятие --</option>
-                    <option value="craftBeerShop-bar">Соревнование по поеданию острых перцев</option>
-                    <option value="ural-bridge">Экскурсия по историческому центру Оренбурга с доктором исторических наук Бурлуцкой Е.В.</option>
-                    <option value="majorpayn-bar">Памятные татуировки по эскизам</option>
                   </select>
-                </div> -->
+                </div>
 
                 <div class="text-center mt-3">
-                  <button type="submit"
+                  <button 
+                  type="button"             
                   id="submit"
                   name="submit"
-                  class="signup-btn">Записаться</button>
+                  class="signup-btn submit-btn">Записаться</button>
                 </div>
               </form>
             </div>
@@ -730,50 +772,61 @@
               ></button>
             </div>
             <div class="modal-body">
-              <form method="POST" action="#">
+              <form class="needs-validation" novalidate>
                 <div class="form-group">
                   <input
                     type="text"
                     class="form-control"
-                    name="your-name"
+                    name="name"
                     placeholder="Имя"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="surname"
+                    placeholder="Фамилия"
+                    required
                   />
                 </div>
                 <div class="form-group mt-3">
                   <input
                     type="email"
                     class="form-control"
-                    name="your-email"
+                    name="email"
                     placeholder="Почта"
+                    required
                   />
                 </div>
                 <div class="form-group mt-3">
                   <input
                     type="tel"
                     class="form-control"
-                    name="your-tel"
+                    name="phone"
                     placeholder="Телефон"
+                    required
                   />
                 </div>
+                <input type="text" name="type" value="tattoes" hidden/>
 
-                <!-- <div class="form-group mt-3">
+                <div class="form-group mt-3">
                   <select
                     id="signup"
-                    name="signup"
+                    name="time"
                     class="form-select"
+                    required
                   >
-                    <option value="">-- Выберите мероприятие --</option>
-                    <option value="craftBeerShop-bar">Соревнование по поеданию острых перцев</option>
-                    <option value="ural-bridge">Экскурсия по историческому центру Оренбурга с доктором исторических наук Бурлуцкой Е.В.</option>
-                    <option value="majorpayn-bar">Памятные татуировки по эскизам</option>
                   </select>
-                </div> -->
+                </div>
 
                 <div class="text-center mt-3">
-                  <button type="submit"
+                  <button 
+                  type="button"             
                   id="submit"
                   name="submit"
-                  class="signup-btn">Записаться</button>
+                  class="signup-btn submit-btn">Записаться</button>
                 </div>
               </form>
             </div>
@@ -1922,10 +1975,13 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="./assets/js/intervals.js"></script>
+    <script src="/assets/js/validation.js"></script>
+
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    
+
     <!-- GLIDE JS -->
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="https://unpkg.com/@glidejs/glide"></script>
