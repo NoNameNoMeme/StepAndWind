@@ -18,6 +18,7 @@ function sendForm(formHTML) {
   if (!validForm(formHTML)) {
     return false;
   }
+  form.delete("checkbox");
   const formDataObj = {};
   form.forEach((value, key) => (formDataObj[key] = value));
   const config = {
@@ -29,11 +30,11 @@ function sendForm(formHTML) {
     .post(`https://fest.stepiveter.ru/intervals`, formDataObj, config)
     .then(function (response) {
       // handle success
-      console.log(response);
+      if (!alert("Вы успешно записались!")) location.reload();
     })
     .catch(function (error) {
       // handle error
-      console.log(error);
+      if (!alert("Ошибка при записи. Попробуйте снова!")) location.reload();
     });
 }
 
@@ -42,7 +43,6 @@ function getIntervals(btn) {
     .get(`https://fest.stepiveter.ru/intervals?type=${btn.dataset.type}`)
     .then(function (response) {
       // handle success
-      console.log(response);
 
       const dataArray = response.data.data;
 
@@ -63,6 +63,5 @@ function getIntervals(btn) {
     })
     .catch(function (error) {
       // handle error
-      console.log(error);
     });
 }
