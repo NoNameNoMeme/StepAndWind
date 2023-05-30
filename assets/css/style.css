@@ -148,7 +148,7 @@ h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.86);
 }
 
 #header.header-scrolled,
@@ -492,10 +492,19 @@ h6 {
   margin-top: 70px;
   width: 100%;
   height: 100vh;
-  background: url(/assets/img/Layer_1.jpg) top center;
+  background: url(/assets/img/horizontal.png) top center;
   background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  #hero {
+    background: url(/assets/img/vertical.png) top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 /* @media (min-width: 1024px) {
