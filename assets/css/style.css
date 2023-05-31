@@ -8,6 +8,12 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("assets/fonts/BebasNeueCyrillic.woff2") format("woff2"),
+  url("assets/fonts/BebasNeueCyrillic.woff") format("woff");
+}
+
 body {
   background: #fff;
   color: #2f3138;
@@ -39,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
