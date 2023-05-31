@@ -105,31 +105,17 @@ h6 {
 
 /* Sections Header
 --------------------------------*/
-.section-header {
-  margin-bottom: 10px;
-  position: relative;
-  padding-bottom: 20px;
-}
-
-.section-header::before {
+/*.section-header::before {
   content: "";
   position: absolute;
   display: block;
   width: 60px;
   height: 5px;
   background: #f6d52f;
-  /*background: #fbf138;*/
+  !*background: #fbf138;*!
   bottom: 0;
   left: calc(50% - 25px);
-}
-
-.section-header h2 {
-  font-size: 36px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
+}*/
 
 .section-header p {
   text-align: center;
@@ -718,6 +704,7 @@ h6 {
   color: #ffffff;
   font-size: 52px;
   font-weight: 400;
+  margin-bottom: 15px;
 }
 
 #about .white-box {
@@ -754,14 +741,6 @@ h6 {
   left: 0;
   right: 0;
 }*/
-
-#about h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  /* color: #eee; */
-  color: #000;
-}
 
 #about h3 {
   font-size: 18px;
@@ -885,6 +864,21 @@ h6 {
 --------------------------------------------------------------*/
 #schedule {
   padding: 60px 0 60px 0;
+  background-color: #4aa1be;
+}
+
+#schedule .title {
+  color: #ffffff;
+  font-size: 52px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#schedule .white-box {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 25px;
 }
 
 #schedule .nav-tabs {
@@ -903,12 +897,12 @@ h6 {
 #schedule .nav-tabs a {
   border: none;
   border-radius: 50px;
-  font-weight: 600;
-  background-color: #818080;
-  /* background-color: #0e1b4d; */
-  /*background-color: #62acee;*/
+  font-weight: 400;
   color: #fff;
+  background-color: #f44c43;;
   padding: 10px 100px;
+  font-size: 30px;
+  font-family: "Bebas Neue", "Raleway", sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -932,10 +926,8 @@ h6 {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #f6d52f;
-  /*background-color: #fbf138;*/
-  color: #fff;
-  /*color: #323232;*/
+  color: #f44c43;
+  background-color: #ffffff;
 }
 
 #schedule .sub-heading {
@@ -987,12 +979,6 @@ h6 {
   transition: all ease-in-out 0.3s;
 }
 
-#schedule .schedule-item h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
 #schedule .schedule-item h4 span {
   font-style: italic;
   color: #19328e;
@@ -1000,15 +986,17 @@ h6 {
   font-size: 16px;
 }
 
-#schedule .schedule-item p {
-  font-style: italic;
-  color: #152b79;
-  margin-bottom: 0;
-}
-
 .schedule-item p span {
   font-size: 16px;
   color: #000;
+}
+
+#schedule .schedule-item .title {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  color: #f44c43;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
