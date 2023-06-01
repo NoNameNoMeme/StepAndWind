@@ -877,8 +877,9 @@ h6 {
 
 #schedule .white-box {
   background-color: #ffffff;
-  padding: 30px 40px;
+  padding: 50px 100px;
   border-radius: 25px;
+  height: 600px;
 }
 
 #schedule .nav-tabs {
@@ -948,14 +949,18 @@ h6 {
 }
 
 #schedule .schedule-item {
-  border-bottom: 1px solid #cad4f6;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  /* border-bottom: 1px solid #cad4f6; */
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
   transition: background-color ease-in-out 0.3s;
 }
 
 #schedule .schedule-item:hover {
   background-color: #fff;
+}
+
+#schedule .schedule-item .white-box__text {
+  font-size: 24px;
 }
 
 #schedule .schedule-item time {
@@ -996,7 +1001,7 @@ h6 {
   color: #f44c43;
   font-weight: 400;
   font-size: 40px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /*--------------------------------------------------------------
