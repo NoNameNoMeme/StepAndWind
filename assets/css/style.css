@@ -519,9 +519,8 @@ h6 {
 
 #hero .hero-container {
   position: absolute;
-  bottom: 0;
+  bottom: 100px;
   left: 0;
-  top: 90px;
   right: 0;
   display: flex;
   justify-content: center;
@@ -531,9 +530,34 @@ h6 {
   padding: 0 15px;
 }
 
+.buy-ticket-btn {
+  font-size: 50px;
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  border-radius: 30px;
+  padding: 4px 100px;
+  transition: all 0.2s;
+  background-color: #f44c43;
+  border: 0;
+  color: #ffffff;
+  position: relative;
+}
+
+.buy-ticket-btn:hover {
+  color: #f44c43;
+  background-color: #ffffff;
+}
+
 @media (max-width: 991px) {
   #hero .hero-container {
-    top: 70px;
+    bottom: 70px;
+  }
+}
+
+@media (max-width: 574px) {
+  .buy-ticket-btn {
+    font-size: 40px;
+    padding: 4px 60px;
+    border-radius: 20px;
   }
 }
 
