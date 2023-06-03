@@ -825,6 +825,22 @@ h6 {
 --------------------------------------------------------------*/
 #speakers {
   padding: 30px 0;
+  background: #4aa1be;
+}
+
+#speakers .title {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+#speakers .subtitle {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 15px;
 }
 
 #speakers .speaker {
@@ -1177,11 +1193,34 @@ h6 {
 --------------------------------------------------------------*/
 #supporters {
   padding: 60px 0;
+  background-color: #4aa1be;
+}
+
+#supporters .title {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+#supporters .red-text {
+  color: #f44c43;
+}
+
+#supporters .subtitle {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+#supporters .white-box {
+  background-color: #ffffff;
+  padding: 30px 0;
+  border-radius: 25px;
 }
 
 #supporters .supporters-wrap {
-  border-top: 1px solid #e0e5fa;
-  border-left: 1px solid #e0e5fa;
   margin-bottom: 30px;
 }
 
@@ -1190,8 +1229,8 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid #e0e5fa;
-  border-bottom: 1px solid #e0e5fa;
+  /*border-right: 1px solid #e0e5fa;
+  border-bottom: 1px solid #e0e5fa;*/
   overflow: hidden;
   background: rgba(255, 255, 255, 0.5);
   height: 300px;
@@ -1417,6 +1456,92 @@ h6 {
 
 #buy-tickets #buy-ticket-modal .btn:hover {
   background-color: #e0072f;
+}
+
+#tickets {
+  background-color: #4aa1be;
+  padding: 30px 0;
+}
+
+#tickets .title {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#tickets .white-box {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 25px;
+}
+
+.ticket-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 2px dotted #4aa1be;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ticket-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-name {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 34px;
+  color: #f44c43;
+}
+
+.ticket-title {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 30px;
+}
+
+.ticket-subtitle {
+
+}
+
+.ticket-cost {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 30px;
+  color: #4aa1be;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ticket-btn {
+  color: #ffffff;
+  /*background: #f6d52f;*/
+  background: #f44c43;
+  /*padding: 7px 22px;*/
+  padding: 7px 40px;
+  border-radius: 50px;
+  /*border: 2px solid #f6d52f;*/
+  transition: all ease-in-out 0.3s;
+  font-weight: 500;
+  line-height: 1;
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+.ticket-btn:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  #tickets .title {
+    font-size: 50px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1910,6 +2035,13 @@ h6 {
   height: auto;
 }
 
+@media (max-width: 1300px) {
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 @media (max-width: 991px) {
   .carousel {
     margin: 0;
@@ -1928,7 +2060,7 @@ h6 {
   }
 
   .img-fluid {
-    max-width: 250%;
+    max-width: 140%;
     height: auto;
   }
 
@@ -1944,6 +2076,11 @@ h6 {
 @media (max-width: 767px) {
   #speakers h2 {
     display: none;
+  }
+
+  .img-fluid {
+    max-width: 200%;
+    height: auto;
   }
 
   #speakers p {
@@ -1976,6 +2113,23 @@ h6 {
   #venue p {
     font-size: 20px;
     color: #000;
+  }
+}
+
+@media (max-width: 576px) {
+  #supporters .title {
+    font-size: 50px;
+  }
+
+  #supporters .subtitle {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-fluid {
+    max-width: 350%;
+    height: auto;
   }
 }
 
