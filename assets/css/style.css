@@ -553,7 +553,15 @@ h6 {
   }
 }
 
-@media (max-width: 574px) {
+@media (max-width: 768px) {
+  .buy-ticket-btn {
+    font-size: 40px;
+    padding: 4px 60px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 576px) {
   .buy-ticket-btn {
     font-size: 40px;
     padding: 4px 60px;
@@ -722,11 +730,12 @@ h6 {
   position: relative;
   color: #fff;
   padding: 30px 0;
+  height: 100vh;
 }
 
 #about .title {
   color: #ffffff;
-  font-size: 52px;
+  font-size: 70px;
   font-weight: 400;
   margin-bottom: 15px;
 }
@@ -735,6 +744,7 @@ h6 {
   background-color: #ffffff;
   padding: 30px 40px;
   border-radius: 25px;
+  /*height: 600px;*/
 }
 
 #about .white-box__text {
@@ -749,6 +759,37 @@ h6 {
   color: #f44c43;
   font-size: 26px;
 }
+
+@media (max-width: 767px) {
+  #about .white-box {
+    padding: 20px;
+  }
+
+  #about .white-box__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  #about .title {
+    font-size: 50px;
+  }
+
+  #about .white-box {
+    padding: 20px;
+  }
+
+  #about .white-box__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  #about .white-box__text .big-red {
+    font-size: 20px;
+  }
+}
+
 @media (min-width: 1024px) {
   #about {
     background-attachment: fixed;
@@ -887,13 +928,14 @@ h6 {
 # Schedule Section
 --------------------------------------------------------------*/
 #schedule {
-  padding: 60px 0 60px 0;
+  padding: 30px 0;
   background-color: #4aa1be;
+  /*height: 100vh;*/
 }
 
 #schedule .title {
   color: #ffffff;
-  font-size: 52px;
+  font-size: 70px;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -904,6 +946,18 @@ h6 {
   padding: 50px 100px;
   border-radius: 25px;
   height: 600px;
+}
+
+#schedule .white-box__text {
+  font-size: 24px;
+}
+
+#schedule .schedule-item .title {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  color: #f44c43;
+  font-weight: 400;
+  font-size: 40px;
+  /* text-align: center; */
 }
 
 #schedule .nav-tabs {
@@ -934,6 +988,10 @@ h6 {
   #schedule .nav-tabs a {
     padding: 8px 60px;
   }
+
+  #schedule .white-box {
+    padding: 40px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -941,6 +999,28 @@ h6 {
     padding: 8px 50px;
     margin-bottom: 10px;
     margin-right: 5px;
+  }
+
+  #schedule .white-box {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  #schedule .title {
+    font-size: 50px;
+  }
+
+  #schedule .white-box {
+    padding: 20px;
+  }
+
+  #schedule .white-box__text {
+    font-size: 20px;
+  }
+
+  #schedule .schedule-item .title {
+    font-size: 36px;
   }
 }
 
@@ -983,10 +1063,6 @@ h6 {
   background-color: #fff;
 }
 
-#schedule .schedule-item .white-box__text {
-  font-size: 24px;
-}
-
 #schedule .schedule-item time {
   padding-bottom: 5px;
   display: inline-block;
@@ -1018,14 +1094,6 @@ h6 {
 .schedule-item p span {
   font-size: 16px;
   color: #000;
-}
-
-#schedule .schedule-item .title {
-  font-family: "Bebas Neue", "Raleway", sans-serif;
-  color: #f44c43;
-  font-weight: 400;
-  font-size: 40px;
-  /* text-align: center; */
 }
 
 /*--------------------------------------------------------------
@@ -1883,9 +1951,9 @@ h6 {
     color: #000;
   }
 
-  #schedule h2 {
+  /*#schedule h2 {
     display: none;
-  }
+  }*/
 
   #eat h2 {
     display: none;
