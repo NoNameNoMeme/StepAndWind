@@ -961,7 +961,8 @@ h6 {
   background-color: #ffffff;
   padding: 50px 100px;
   border-radius: 25px;
-  height: 600px;
+  /*height: 600px;*/
+  position: relative;
 }
 
 #schedule .white-box__text {
@@ -2312,4 +2313,38 @@ h6 {
 
 .hidden {
   display: none;
+}
+
+.loader {
+  overflow: hidden;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.loader>div {
+  height: 100px;
+  width: 100px;
+  border: 15px dotted #f44c43;
+  border-top-color: #f44c43;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  animation: spin 2.5s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-text {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  color: #f44c43;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
 }
