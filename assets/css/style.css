@@ -495,7 +495,7 @@ h6 {
 
 @media (max-width: 767px) {
   #hero {
-    background: url(/assets/img/vertical.jpg) top center;
+    background: url(/assets/img/vertical.png) top center;
     background-size: cover;
     background-repeat: no-repeat;
   }
