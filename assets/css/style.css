@@ -826,6 +826,7 @@ h6 {
 #speakers {
   padding: 30px 0;
   background: #4aa1be;
+  position: relative;
 }
 
 #speakers .title {
@@ -946,6 +947,7 @@ h6 {
 #schedule {
   padding: 30px 0;
   background-color: #4aa1be;
+  position: relative;
   /*height: 100vh;*/
 }
 
@@ -2365,4 +2367,143 @@ h6 {
   font-weight: 400;
   font-size: 30px;
   text-align: center;
+}
+
+#about .circle {
+  position: absolute;
+  z-index: 0;
+  left: 200px;
+  bottom: -200px;
+}
+
+#about .wave-1 {
+  position: absolute;
+  z-index: 0;
+  bottom: 400px;
+}
+
+#about .wave-2 {
+  position: absolute;
+  z-index: 0;
+  bottom: 400px;
+  right: 0;
+}
+
+#about .save {
+  width: 300px;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: -50px;
+}
+
+#about .sun {
+  width: 500px;
+  position: absolute;
+  z-index: 0;
+  top: -140px;
+  left: -200px;
+}
+
+@media (max-width: 767px) {
+  #about .wave-2 {
+    visibility: hidden;
+  }
+
+  #about .circle {
+    visibility: hidden;
+  }
+}
+
+#schedule .wave-1 {
+  position: absolute;
+  z-index: 0;
+  bottom: 50px;
+}
+
+#schedule .wave-2 {
+  position: absolute;
+  z-index: 0;
+  bottom: 50px;
+  right: 0;
+}
+
+#schedule .watermelon {
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+  left: -20px;
+  bottom: -20px;
+  transform: rotate(45deg);
+}
+
+#schedule .slances {
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+  right: -20px;
+  bottom: -20px;
+  transform: rotate(45deg);
+}
+
+@media (max-width: 767px) {
+  #schedule .watermelon {
+    width: 100px;
+  }
+
+  #schedule .slances {
+    width: 70px;
+  }
+
+  #schedule .wave-2 {
+    visibility: hidden;
+  }
+}
+
+#schedule .eat .wave-1 {
+  position: absolute;
+  z-index: 0;
+  bottom: 50px;
+}
+
+#schedule .eat .wave-2 {
+  position: absolute;
+  z-index: 0;
+  bottom: 50px;
+  right: 0;
+}
+
+#schedule .eat .white-box .coctaile {
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+  bottom: -30px;
+  left: -60px;
+  transform: rotate(-30deg);
+}
+
+#schedule .eat .white-box .watermelon {
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  right: -10px;
+  transform: rotate(200deg);
+}
+
+#speakers .save {
+  width: 300px;
+  position: absolute;
+  z-index: 0;
+  bottom: 50px;
+  right: -130px;
+}
+
+#speakers .pineapple {
+  width: 300px;
+  position: absolute;
+  z-index: 0;
+  bottom: 50px;
+  left: 70px;
+  transform: rotate(30deg);
 }
