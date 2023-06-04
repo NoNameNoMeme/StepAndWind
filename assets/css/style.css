@@ -1773,13 +1773,31 @@ h6 {
 }
 
 #footer .footer-top h4 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
   border-bottom: 2px solid #f6d52f;
+}
+
+#footer .footer-top .offerta {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .link {
+  color: #f44c43;
+}
+
+#footer .footer-top .link:hover {
+  cursor: pointer;
 }
 
 #footer .footer-top .footer-links {
