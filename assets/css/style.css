@@ -724,7 +724,7 @@ h6 {
 --------------------------------------------------------------*/
 #about {
   /* background: url("../img/about-bg.png"); */
-  background-color: #4aa1be;
+  background-color: #00a2c0;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -825,8 +825,9 @@ h6 {
 --------------------------------------------------------------*/
 #speakers {
   padding: 30px 0;
-  background: #4aa1be;
+  background: #00a2c0;
   position: relative;
+  overflow: hidden;
 }
 
 #speakers .title {
@@ -946,9 +947,10 @@ h6 {
 --------------------------------------------------------------*/
 #schedule {
   padding: 30px 0;
-  background-color: #4aa1be;
+  background-color: #00a2c0;
   position: relative;
   /*height: 100vh;*/
+  overflow: hidden;
 }
 
 #schedule .title {
@@ -1196,7 +1198,7 @@ h6 {
 --------------------------------------------------------------*/
 #supporters {
   padding: 60px 0;
-  background-color: #4aa1be;
+  background-color: #00a2c0;
 }
 
 #supporters .title {
@@ -1462,7 +1464,7 @@ h6 {
 }
 
 #tickets {
-  background-color: #4aa1be;
+  background-color: #00a2c0;
   padding: 30px 0;
 }
 
@@ -1485,7 +1487,7 @@ h6 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  border-bottom: 2px dotted #4aa1be;
+  border-bottom: 2px dotted #00a2c0;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -1515,7 +1517,7 @@ h6 {
 .ticket-cost {
   font-family: "Bebas Neue", "Raleway", sans-serif;
   font-size: 30px;
-  color: #4aa1be;
+  color: #00a2c0;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -1710,7 +1712,7 @@ h6 {
 --------------------------------------------------------------*/
 #footer {
   /* background: #101522; */
-  background: #363636;
+  background: #00a2c0;
   padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
@@ -1718,7 +1720,8 @@ h6 {
 
 #footer .footer-top {
   /* background: #040919; */
-  background: #000;
+  border-bottom: 4px solid #ffffff;
+  background: #00a2c0;
   padding: 60px 0 30px 0;
 }
 
@@ -1775,13 +1778,13 @@ h6 {
 }
 
 #footer .footer-top h4 {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-  border-bottom: 2px solid #f6d52f;
+  border-bottom: 2px solid #ffffff;
 }
 
 #footer .footer-top .offerta {
