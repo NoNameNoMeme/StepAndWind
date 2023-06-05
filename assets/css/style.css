@@ -1005,6 +1005,12 @@ h6 {
   font-family: "Bebas Neue", "Raleway", sans-serif;
 }
 
+#schedule .schedule-item .flex-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 @media (max-width: 991px) {
   #schedule .nav-tabs a {
     padding: 8px 60px;
