@@ -1,0 +1,2573 @@
+/**
+* Template Name: TheEvent - v4.9.1
+* Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeueCyrillic.woff2") format("woff2"),
+  url("../fonts/BebasNeueCyrillic.woff") format("woff");
+
+}
+
+body {
+  background: #fff;
+  color: #2f3138;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #f6d52f;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #f6d52f;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  /*margin: 0 0 30px 0;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+  /*color: #0e1b4d;*/
+  color: #000;
+}
+
+.main-page {
+  margin-top: 70px;
+}
+
+/* Prelaoder */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url("../img/preloader.svg") no-repeat center center;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #f6d52f;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #f94a6a;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Sections Header
+--------------------------------*/
+/*.section-header::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #f6d52f;
+  !*background: #fbf138;*!
+  bottom: 0;
+  left: calc(50% - 25px);
+}*/
+
+.section-header p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.section-with-bg {
+  background-color: #f6f7fd;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 90px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  background: rgba(0, 0, 0, 0);
+}
+
+#header.header-scrolled,
+#header.header-inner {
+  background: rgba(0, 0, 0, 0.9);
+  height: 90px;
+}
+
+#header.header-scrolled .hidden {
+  display: block;
+}
+
+#header #logo h1 {
+  font-size: 36px;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#header #logo h1 span {
+  /*color: #fbf138;*/
+  color: #f6d52f;
+}
+
+#header #logo h1 a,
+#header #logo h1 a:hover {
+  color: #fff;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 80px;
+  /*max-height: 60px;*/
+}
+
+@media (max-width: 992px) {
+  #header #logo img {
+    max-height: 60px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Buy Tickets
+--------------------------------------------------------------*/
+.buy-tickets {
+  color: #f44c43;
+  /*background: #f6d52f;*/
+  background: #ffffff;
+  /*padding: 7px 22px;*/
+  padding: 7px 40px;
+  margin: 0 0 0 15px;
+  border-radius: 50px;
+  /*border: 2px solid #f6d52f;*/
+  transition: all ease-in-out 0.3s;
+  font-weight: 500;
+  line-height: 1;
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+.buy-tickets:hover {
+  /*background: none;*/
+  color: #000000;
+}
+
+.buy-tickets:focus {
+  color: #000000;
+}
+
+@media (max-width: 992px) {
+  .buy-tickets {
+    margin: 0 15px 0 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar > ul > li {
+  white-space: nowrap;
+  padding: 10px 0 10px 12px;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*color: rgba(202, 206, 221, 0.8);*/
+  color: #fff;
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+  padding: 6px 4px;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar > ul > li > a:before {
+  /*content: "";*/
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #f6d52f;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before,
+.navbar li:hover > a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #fff;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 12px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  color: #060c22;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  color: #f6d52f;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .carousel {
+    margin: 0;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile > ul > li {
+  padding: 0;
+}
+
+.navbar-mobile a:hover:before,
+.navbar-mobile li:hover > a:before,
+.navbar-mobile .active:before {
+  visibility: hidden;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 30px;
+  color: #060c22;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
+  color: #f44c43;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
+  color: #f6d52f;
+}
+
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url(/assets/img/horizontal.png) top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  #hero {
+    background: url(/assets/img/vertical.png) top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* @media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+} */
+
+#hero:before {
+  content: "";
+  /* background: rgba(0, 0, 0, 0.7); */
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .hero-container {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.buy-ticket-btn {
+  font-size: 50px;
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  border-radius: 30px;
+  padding: 4px 100px;
+  transition: all 0.2s;
+  background-color: #f44c43;
+  border: 0;
+  color: #ffffff;
+  position: relative;
+}
+
+.buy-ticket-btn:hover {
+  color: #f44c43;
+  background-color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  #hero .hero-container {
+    bottom: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .buy-ticket-btn {
+    font-size: 40px;
+    padding: 4px 60px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .buy-ticket-btn {
+    font-size: 40px;
+    padding: 4px 60px;
+    border-radius: 20px;
+  }
+}
+
+#hero h1 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#hero h1 span {
+  color: #f6d52f;
+  /*color: #fbf138;*/
+}
+
+@media (max-width: 991px) {
+  #hero h1 {
+    font-size: 34px;
+  }
+}
+
+#hero p {
+  color: #ebebeb;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+@media (max-width: 991px) {
+  #hero p {
+    font-size: 16px;
+  }
+}
+
+#hero .play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(#f6d52f 50%, rgba(101, 111, 150, 0.15) 52%);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero .play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+#hero .play-btn:before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 2s;
+  animation: pulsate-btn 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 2px solid rgba(163, 163, 163, 0.4);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+#hero .play-btn:hover::after {
+  border-left: 15px solid #f6d52f;
+  transform: scale(20);
+}
+
+#hero .play-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  -webkit-animation: none;
+  animation: none;
+  border-radius: 0;
+}
+
+#hero .about-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #f6d52f;
+  /*border: 2px solid #fbf138;*/
+}
+
+#hero .about-btn:hover {
+  background: #f6d52f;
+  /*background: #fbf138;*/
+  color: #fff;
+}
+
+@-webkit-keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+#about {
+  /* background: url("../img/about-bg.png"); */
+  background-color: #00a2c0;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  padding: 30px 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .title-main {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+#about .title {
+  color: #f44c43;
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+#about .subtitle {
+  color: #f44c43;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+#about .white-box {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 25px;
+  /*height: 600px;*/
+}
+
+#about .white-box__text {
+  font-size: 16px;
+  color: #000;
+  text-align: justify;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+#about .white-box__text .big-red {
+  color: #f44c43;
+  font-size: 26px;
+}
+
+@media (max-width: 767px) {
+  #about .white-box {
+    padding: 20px;
+  }
+
+  #about .white-box__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  #about .title {
+    font-size: 50px;
+  }
+
+  #about .white-box {
+    padding: 20px;
+  }
+
+  #about .white-box__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  #about .white-box__text .big-red {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #about {
+    background-attachment: fixed;
+  }
+}
+
+/*#about:before {
+  content: "";
+  !* background: rgba(0, 0, 0, 0.7); *!
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}*/
+
+#about h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* #about p span {
+  text-decoration: underline;
+  font-weight: 700;
+} */
+
+/*--------------------------------------------------------------
+# Speakers Section
+--------------------------------------------------------------*/
+#speakers {
+  padding: 30px 0;
+  background: #00a2c0;
+  position: relative;
+  overflow: hidden;
+}
+
+#speakers .title {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+#speakers .subtitle {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+#speakers .speaker {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+#speakers .speaker .details {
+  background: rgba(6, 12, 34, 0.76);
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  right: 0;
+  text-align: center;
+  padding-top: 10px;
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#speakers .speaker .details h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#speakers .speaker .details p {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+#speakers .speaker .details .social {
+  height: 40px;
+}
+
+#speakers .speaker .details .social i {
+  line-height: 0;
+  margin: 0 2px;
+}
+
+#speakers .speaker .details a {
+  color: #fff;
+}
+
+#speakers .speaker .details a:hover {
+  color: #f6d52f;
+}
+
+#speakers .speaker:hover .details {
+  bottom: 0;
+}
+
+#speakers-details {
+  padding: 60px 0;
+}
+
+#speakers-details .details h2 {
+  color: #112363;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#speakers-details .details .social {
+  margin-bottom: 15px;
+}
+
+#speakers-details .details .social a {
+  background: #e9edfb;
+  color: #112363;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#speakers-details .details .social a:hover {
+  background: #f6d52f;
+  color: #fff;
+}
+
+#speakers-details .details .social a i {
+  font-size: 16px;
+  line-height: 0;
+}
+
+#speakers-details .details p {
+  color: #112363;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------------
+# Schedule Section
+--------------------------------------------------------------*/
+#schedule {
+  padding: 30px 0;
+  background-color: #00a2c0;
+  position: relative;
+  /*height: 100vh;*/
+  overflow: hidden;
+}
+
+#schedule .title {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#schedule .white-box {
+  background-color: #ffffff;
+  padding: 50px 100px;
+  border-radius: 25px;
+  /*height: 600px;*/
+  position: relative;
+}
+
+#schedule .white-box__text {
+  font-size: 24px;
+}
+
+#schedule .schedule-item .title {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  color: #f44c43;
+  font-weight: 400;
+  font-size: 40px;
+  /* text-align: center; */
+}
+
+#schedule .nav-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+#schedule .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#schedule .nav-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #f44c43;;
+  padding: 10px 100px;
+  font-size: 30px;
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+}
+
+#schedule .schedule-item .flex-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  #schedule .nav-tabs a {
+    padding: 8px 60px;
+  }
+
+  #schedule .white-box {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  #schedule .nav-tabs a {
+    padding: 8px 50px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+
+  #schedule .white-box {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  #schedule .title {
+    font-size: 50px;
+  }
+
+  #schedule .white-box {
+    padding: 20px;
+  }
+
+  #schedule .white-box__text {
+    font-size: 20px;
+  }
+
+  #schedule .schedule-item .title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  #schedule .nav-tabs a {
+    padding: 8px 30px;
+  }
+}
+
+#schedule .nav-tabs a.active {
+  color: #f44c43;
+  background-color: #ffffff;
+}
+
+#schedule .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto 20px auto;
+}
+
+@media (min-width: 991px) {
+  #schedule .sub-heading {
+    width: 75%;
+  }
+}
+
+#schedule .tab-pane {
+  transition: ease-in-out 0.2s;
+}
+
+#schedule .schedule-item {
+  /* border-bottom: 1px solid #cad4f6; */
+  /* padding-top: 15px;*/
+  padding-bottom: 20px;
+  padding-top: 20px;
+  transition: background-color ease-in-out 0.3s;
+  border-bottom: 1px solid #1a1e21;
+}
+
+#schedule .schedule-item:last-child {
+  border-bottom: none;
+}
+
+#schedule .schedule-item .blue {
+  color: #00a2c0;
+}
+
+#schedule .schedule-item .address {
+  font-size: 16px;
+}
+
+#schedule .schedule-item:hover {
+  background-color: #fff;
+}
+
+#schedule .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#schedule .schedule-item .speaker {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#schedule .schedule-item .speaker img {
+  height: 100%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+#schedule .schedule-item h4 span {
+  font-style: italic;
+  color: #19328e;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.schedule-item p span {
+  font-size: 16px;
+  color: #000;
+}
+
+#schedule .cool-btn {
+  font-size: 40px;
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  border-radius: 30px;
+  transition: all 0.2s;
+  background-color: #f44c43;
+  border: 0;
+  max-width: 300px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+# Venue Section
+--------------------------------------------------------------*/
+#venue {
+  padding: 60px 0 60px 0;
+}
+
+#venue .container-fluid {
+  margin-bottom: 3px;
+}
+
+.venue-map {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+#venue .venue-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+#venue .venue-info {
+  background: url("../img/venue-info-bg.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#venue .venue-info:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#venue .venue-info h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width: 574px) {
+  #venue .venue-info h3 {
+    font-size: 24px;
+  }
+}
+
+#venue .venue-info p {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+#venue .venue-gallery-container {
+  padding-right: 12px;
+}
+
+#venue .venue-gallery {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+#venue .venue-gallery img {
+  transition: all ease-in-out 0.4s;
+}
+
+#venue .venue-gallery:hover img {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# Sponsors Section
+--------------------------------------------------------------*/
+#supporters {
+  padding: 60px 0;
+  background-color: #00a2c0;
+}
+
+#supporters .title {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+#supporters .red-text {
+  color: #f44c43;
+}
+
+#supporters .subtitle {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+#supporters .white-box {
+  background-color: #ffffff;
+  padding: 30px 0;
+  border-radius: 25px;
+}
+
+#supporters .supporters-wrap {
+  margin-bottom: 30px;
+}
+
+#supporters .supporter-logo {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*border-right: 1px solid #e0e5fa;
+  border-bottom: 1px solid #e0e5fa;*/
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+  height: 300px;
+}
+
+#supporters .supporter-logo:hover img {
+  transform: scale(1.2);
+}
+
+#supporters img {
+  transition: all 0.4s ease-in-out;
+}
+
+/*--------------------------------------------------------------
+# F.A.Q Section
+--------------------------------------------------------------*/
+#faq {
+  padding: 60px 0;
+}
+
+#faq .faq-list {
+  padding: 0;
+  list-style: none;
+}
+
+#faq .faq-list li {
+  border-bottom: 1px solid #e9eaed;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+#faq .faq-list .question {
+  display: block;
+  position: relative;
+  font-family: #f6d52f;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-left: 25px;
+  cursor: pointer;
+  color: #e0072f;
+  transition: 0.3s;
+}
+
+#faq .faq-list i {
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+#faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 25px;
+}
+
+#faq .faq-list .icon-show {
+  display: none;
+}
+
+#faq .faq-list .collapsed {
+  color: black;
+}
+
+#faq .faq-list .collapsed:hover {
+  color: #f6d52f;
+}
+
+#faq .faq-list .collapsed .icon-show {
+  display: inline-block;
+  transition: 0.6s;
+}
+
+#faq .faq-list .collapsed .icon-close {
+  display: none;
+  transition: 0.6s;
+}
+
+/*--------------------------------------------------------------
+# Subscribe Section
+--------------------------------------------------------------*/
+#subscribe {
+  padding: 60px;
+  background: url(../img/subscribe-bg.jpg) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#subscribe:before {
+  content: "";
+  background: rgba(6, 12, 34, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (min-width: 1024px) {
+  #subscribe {
+    background-attachment: fixed;
+  }
+}
+
+#subscribe .section-header h2,
+#subscribe p {
+  color: #fff;
+}
+
+#subscribe input {
+  background: #fff;
+  color: #060c22;
+  border: 0;
+  outline: none;
+  margin: 0;
+  padding: 9px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+@media (min-width: 767px) {
+  #subscribe input {
+    min-width: 400px;
+  }
+}
+
+#subscribe button {
+  border: 0;
+  padding: 9px 25px;
+  cursor: pointer;
+  background: #f6d52f;
+  color: #fff;
+  transition: all 0.3s ease;
+  outline: none;
+  font-size: 14px;
+  border-radius: 50px;
+}
+
+#subscribe button:hover {
+  background: #e0072f;
+}
+
+@media (max-width: 460px) {
+  #subscribe button {
+    margin-top: 10px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Buy Tickets Section
+--------------------------------------------------------------*/
+#buy-tickets {
+  padding: 60px 0;
+}
+
+#buy-tickets .card {
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+}
+
+#buy-tickets .card:hover {
+  box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
+}
+
+#buy-tickets .card hr {
+  margin: 25px 0;
+}
+
+#buy-tickets .card .card-title {
+  margin: 10px 0;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #000;
+}
+
+#buy-tickets .card .card-price {
+  font-size: 30px;
+  color: #000;
+
+  margin: 0;
+}
+
+#buy-tickets .card ul li {
+  margin-bottom: 20px;
+}
+
+#buy-tickets .card .text-muted {
+  opacity: 0.7;
+}
+
+#buy-tickets .card .btn {
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: #f6d52f;
+  border: 0;
+  color: #000;
+}
+
+#buy-tickets .card .btn:hover {
+  background-color: #ecc813;
+}
+
+#buy-tickets #buy-ticket-modal input,
+#buy-tickets #buy-ticket-modal select {
+  border-radius: 0;
+}
+
+#buy-tickets #buy-ticket-modal .btn {
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: #f6d52f;
+  border: 0;
+  color: #fff;
+}
+
+#buy-tickets #buy-ticket-modal .btn:hover {
+  background-color: #e0072f;
+}
+
+#tickets {
+  background-color: #00a2c0;
+  padding: 30px 0;
+}
+
+#tickets .title {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#tickets .white-box {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 25px;
+}
+
+.ticket-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 2px dotted #00a2c0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ticket-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-name {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 34px;
+  color: #f44c43;
+}
+
+.ticket-title {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 30px;
+}
+
+.ticket-subtitle {
+
+}
+
+.ticket-cost {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 30px;
+  color: #00a2c0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ticket-btn {
+  color: #ffffff;
+  /*background: #f6d52f;*/
+  background: #f44c43;
+  /*padding: 7px 22px;*/
+  padding: 7px 40px;
+  border-radius: 50px;
+  /*border: 2px solid #f6d52f;*/
+  transition: all ease-in-out 0.3s;
+  font-weight: 500;
+  line-height: 1;
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+.ticket-btn:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  #tickets .title {
+    font-size: 50px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+#contact {
+  padding: 60px 0;
+}
+
+#contact .contact-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact .contact-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #f6d52f;
+}
+
+#contact .contact-info address,
+#contact .contact-info p {
+  margin-bottom: 0;
+  color: #112363;
+}
+
+#contact .contact-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #112363;
+}
+
+#contact .contact-info a {
+  color: #4869df;
+}
+
+#contact .contact-info a:hover {
+  color: #f6d52f;
+}
+
+#contact .contact-address,
+#contact .contact-phone,
+#contact .contact-email {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  #contact .contact-address,
+  #contact .contact-phone,
+  #contact .contact-email {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #contact .contact-phone {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+}
+
+#contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+#contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+#contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+#contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+#contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+#contact .php-email-form input,
+#contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+#contact .php-email-form input:focus,
+#contact .php-email-form textarea:focus {
+  border-color: #f6d52f;
+}
+
+#contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+#contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+#contact .php-email-form button[type="submit"] {
+  background: #f6d52f;
+  border: 0;
+  padding: 10px 40px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#contact .php-email-form button[type="submit"]:hover {
+  background: #e0072f;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  /* background: #101522; */
+  background: #00a2c0;
+  padding: 0 0 25px 0;
+  color: #eee;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  /* background: #040919; */
+  border-bottom: 4px solid #ffffff;
+  background: #00a2c0;
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 26px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+#footer .footer-top .footer-info img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+#footer .footer-top .social-links a {
+  display: inline-block;
+  background: #222636;
+  color: #eee;
+  line-height: 1;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .footer-top .social-links a i {
+  line-height: 0;
+  font-size: 16px;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #f6d52f;
+  color: #fff;
+}
+
+#footer .footer-top h4 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #ffffff;
+}
+
+#footer .footer-top .offerta {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .link {
+  color: #f44c43;
+}
+
+#footer .footer-top .link:hover {
+  cursor: pointer;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 5px;
+  color: #f6d52f;
+  font-size: 18px;
+}
+
+#footer .footer-top .footer-links ul li {
+  border-bottom: 1px solid #262c44;
+  padding: 10px 0;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #eee;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #f6d52f;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact p {
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+#footer .footer-top .footer-newsletter {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-newsletter input[type="email"] {
+  border: 0;
+  padding: 6px 8px;
+  width: 65%;
+}
+
+#footer .footer-top .footer-newsletter input[type="submit"] {
+  background: #f6d52f;
+  border: 0;
+  width: 35%;
+  padding: 6px 0;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#footer .footer-top .footer-newsletter input[type="submit"]:hover {
+  background: #e0072f;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  text-align: center;
+  font-size: 13px;
+  color: #ddd;
+}
+
+/* МОИ ПРАВКИ */
+
+.signup-btn {
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  /* background-color: #f6a02f; */
+  background-color: #f44c43;
+  border: 0;
+  /* color: #fff; */
+  color: #ffffff;
+  box-shadow: 1px 1px 3px rgb(70, 70, 70);
+  max-width: 202.22px;
+  width: 100%;
+}
+
+.signup-btn:hover {
+  /* color: #fff; */
+  /* background-color: #f66e2f; */
+  background-color: #f44c43;
+  color: #000000;
+}
+
+.free-btn {
+  font-size: 15px;
+  border-radius: 40px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: #f6d52f;
+  /*background-color: #fbf138;*/
+  border: 0;
+  color: #323232;
+  cursor: default;
+}
+
+.free-btn:hover {
+  cursor: default;
+}
+
+.buy-btn {
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: #f6d52f;
+  border: 0;
+  color: #323232;
+  box-shadow: 1px 1px 3px rgb(70, 70, 70);
+  max-width: 202.22px;
+  width: 100%;
+}
+
+.buy-btn:hover {
+  background-color: #f6e22f;
+}
+
+.buy-btn:visited {
+  color: #fff;
+}
+
+.schedule-item a {
+  color: #fff;
+}
+
+.section-header p.section-header__subtitle {
+  color: #000;
+}
+
+.buy-tickets__subtitle {
+  color: #000;
+}
+
+/* СПОНСОРЫ */
+
+.supporters__margin {
+  margin-bottom: 0;
+}
+
+#supporters .supporter-logo.black {
+  background-color: #000;
+}
+
+.section-header.section-header__gallery {
+  margin-bottom: 10px;
+}
+
+/* ГАЛЛЕРЕЯ */
+
+.gallery {
+  padding: 60px 0 60px 0;
+}
+
+.gallery .container-fluid {
+  margin-bottom: 3px;
+}
+
+.gallery .venue-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
+.gallery .venue-info {
+  background: url("../img/venue-info-bg.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.gallery .venue-info:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.gallery .venue-info h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width: 574px) {
+  .gallery .venue-info h3 {
+    font-size: 24px;
+  }
+}
+
+.gallery .venue-info p {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.gallery .venue-gallery-container {
+  padding-right: 12px;
+}
+
+.gallery .venue-gallery {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.gallery .venue-gallery img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery .venue-gallery:hover img {
+  transform: scale(1.1);
+}
+
+.carousel {
+  margin: 0 25%;
+}
+
+.carousel.supporters__carousel {
+  margin: 0;
+}
+
+#supporters .supporter-logo {
+  height: 150px;
+}
+
+.img-fluid__gallery {
+  max-width: 100%;
+}
+
+.img-fluid {
+  max-width: 50%;
+  height: auto;
+}
+
+@media (max-width: 1300px) {
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .carousel {
+    margin: 0;
+  }
+
+  #supporters .supporter-logo {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #e0e5fa;
+    border-bottom: 1px solid #e0e5fa;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.5);
+    height: 140px;
+  }
+
+  .img-fluid {
+    max-width: 140%;
+    height: auto;
+  }
+
+  .section-header h2 {
+    font-size: 26px;
+  }
+
+  #supporters .glide__arrow {
+    top: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #speakers h2 {
+    display: none;
+  }
+
+  .img-fluid {
+    max-width: 200%;
+    height: auto;
+  }
+
+  #speakers p {
+    font-size: 20px;
+    color: #000;
+  }
+
+  /*#schedule h2 {
+    display: none;
+  }*/
+
+  #eat h2 {
+    display: none;
+  }
+
+  #schedule p {
+    font-size: 20px;
+    color: #000;
+  }
+
+  #eat p {
+    font-size: 20px;
+    color: #000;
+  }
+
+  #venue h2 {
+    display: none;
+  }
+
+  #venue p {
+    font-size: 20px;
+    color: #000;
+  }
+}
+
+@media (max-width: 576px) {
+  #supporters .title {
+    font-size: 40px;
+  }
+
+  #supporters .subtitle {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-fluid {
+    max-width: 350%;
+    height: auto;
+  }
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(100%);
+}
+
+.carousel-control-next.white,
+.carousel-control-prev.white {
+  filter: invert(0%);
+}
+
+.braslet {
+  text-decoration: underline;
+}
+
+.braslet:hover {
+  cursor: pointer;
+}
+
+#more {
+  display: none;
+}
+
+.read-more-btn {
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  background-color: #f6d52f;
+  padding: 5px 10px;
+}
+
+#dots {
+  text-align: center;
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+}
+
+#dots:hover {
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+# Eat Section
+--------------------------------------------------------------*/
+#eat {
+  padding: 60px 0 60px 0;
+}
+
+#eat .nav-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+#eat .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#eat .nav-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #818080;
+  /* background-color: #0e1b4d; */
+  /*background-color: #62acee;*/
+  color: #fff;
+  padding: 10px 100px;
+}
+
+@media (max-width: 991px) {
+  #eat .nav-tabs a {
+    padding: 8px 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  #eat .nav-tabs a {
+    padding: 8px 50px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  #eat .nav-tabs a {
+    padding: 8px 30px;
+  }
+}
+
+#eat .nav-tabs a.active {
+  background-color: #f6d52f;
+  /*background-color: #fbf138;*/
+  color: #fff;
+  /*color: #323232;*/
+}
+
+#eat .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto 20px auto;
+}
+
+@media (min-width: 991px) {
+  #eat .sub-heading {
+    width: 75%;
+  }
+}
+
+#eat .tab-pane {
+  transition: ease-in-out 0.2s;
+}
+
+#eat .schedule-item {
+  border-bottom: 1px solid #cad4f6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+#eat .schedule-item:hover {
+  background-color: #fff;
+}
+
+#eat .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#eat .schedule-item .speaker {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#eat .schedule-item .speaker img {
+  height: 100%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+#eat .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#eat .schedule-item h4 span {
+  font-style: italic;
+  color: #19328e;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#eat .schedule-item p {
+  font-style: italic;
+  color: #152b79;
+  margin-bottom: 0;
+}
+
+.schedule-item p span {
+  font-size: 16px;
+  color: #000;
+}
+
+#supporters .glide__arrow {
+  color: #000;
+}
+
+.hidden {
+  display: none;
+}
+
+.loader {
+  overflow: hidden;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.loader>div {
+  height: 100px;
+  width: 100px;
+  border: 15px dotted #f44c43;
+  border-top-color: #f44c43;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  animation: spin 2.5s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-text {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  color: #f44c43;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+}
+
+#about .circle {
+  position: absolute;
+  z-index: 0;
+  left: 200px;
+  bottom: -200px;
+}
+
+#about .wave-1 {
+  position: absolute;
+  z-index: 0;
+  bottom: 400px;
+}
+
+#about .wave-2 {
+  position: absolute;
+  z-index: 0;
+  bottom: 400px;
+  right: 0;
+}
+
+#about .save {
+  width: 300px;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: -50px;
+}
+
+#about .sun {
+  width: 500px;
+  position: absolute;
+  z-index: 0;
+  top: -140px;
+  left: -200px;
+}
+
+@media (max-width: 767px) {
+  #about .wave-2 {
+    visibility: hidden;
+  }
+
+  #about .circle {
+    visibility: hidden;
+  }
+}
+
+#schedule .wave-1 {
+  position: absolute;
+  z-index: 0;
+  bottom: 50px;
+}
+
+#schedule .wave-2 {
+  position: absolute;
+  z-index: 0;
+  bottom: 50px;
+  right: 0;
+}
+
+#schedule .watermelon {
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+  left: -20px;
+  bottom: -20px;
+  transform: rotate(45deg);
+}
+
+#schedule .slances {
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+  right: -20px;
+  bottom: -20px;
+  transform: rotate(45deg);
+}
+
+#schedule .br-schedule {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  #schedule .br-schedule {
+    display: initial;
+  }
+}
+
+@media (max-width: 767px) {
+  #schedule .watermelon {
+    width: 100px;
+  }
+
+  #schedule .slances {
+    width: 70px;
+  }
+
+  #schedule .wave-2 {
+    visibility: hidden;
+  }
+}
+
+#schedule .eat .wave-1 {
+  position: absolute;
+  z-index: 0;
+  bottom: 50px;
+}
+
+#schedule .eat .wave-2 {
+  position: absolute;
+  z-index: 0;
+  bottom: 50px;
+  right: 0;
+}
+
+#schedule .eat .white-box .coctaile {
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+  bottom: -30px;
+  left: -60px;
+  transform: rotate(-30deg);
+}
+
+#schedule .eat .white-box .watermelon {
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  right: -10px;
+  transform: rotate(200deg);
+}
+
+#speakers .save {
+  width: 300px;
+  position: absolute;
+  z-index: 0;
+  bottom: 50px;
+  right: -130px;
+}
+
+#speakers .pineapple {
+  width: 300px;
+  position: absolute;
+  z-index: 0;
+  bottom: 50px;
+  left: 70px;
+  transform: rotate(30deg);
+}

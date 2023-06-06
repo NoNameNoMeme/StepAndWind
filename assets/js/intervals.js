@@ -32,8 +32,7 @@ function sendForm(formHTML) {
     .post(`https://fest.stepiveter.ru/payment_link`, formDataObj, config)
     .then(function (response) {
       // handle success
-        console.log(response.data);
-      if (!alert("Вы будете перенаправлены на оплату билета!")) location.replace(response.data);
+      if (!alert("Вы будете перенаправлены на оплату билета!")) location.replace(response.data.data);
     })
     .catch(function (error) {
       // handle error
