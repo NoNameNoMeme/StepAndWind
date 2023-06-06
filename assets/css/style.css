@@ -1081,9 +1081,23 @@ h6 {
 
 #schedule .schedule-item {
   /* border-bottom: 1px solid #cad4f6; */
-  /* padding-top: 15px;
-  padding-bottom: 15px; */
+  /* padding-top: 15px;*/
+  padding-bottom: 20px;
+  padding-top: 20px;
   transition: background-color ease-in-out 0.3s;
+  border-bottom: 1px solid #1a1e21;
+}
+
+#schedule .schedule-item:last-child {
+  border-bottom: none;
+}
+
+#schedule .schedule-item .blue {
+  color: #00a2c0;
+}
+
+#schedule .schedule-item .address {
+  font-size: 16px;
 }
 
 #schedule .schedule-item:hover {
@@ -1121,6 +1135,19 @@ h6 {
 .schedule-item p span {
   font-size: 16px;
   color: #000;
+}
+
+#schedule .cool-btn {
+  font-size: 40px;
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  border-radius: 30px;
+  transition: all 0.2s;
+  background-color: #f44c43;
+  border: 0;
+  max-width: 300px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1897,10 +1924,10 @@ h6 {
   padding: 10px 40px;
   transition: all 0.2s;
   /* background-color: #f6a02f; */
-  background-color: #f6d52f;
+  background-color: #f44c43;
   border: 0;
   /* color: #fff; */
-  color: #323232;
+  color: #ffffff;
   box-shadow: 1px 1px 3px rgb(70, 70, 70);
   max-width: 202.22px;
   width: 100%;
@@ -1909,7 +1936,8 @@ h6 {
 .signup-btn:hover {
   /* color: #fff; */
   /* background-color: #f66e2f; */
-  background-color: #f6e22f;
+  background-color: #f44c43;
+  color: #000000;
 }
 
 .free-btn {
@@ -2148,11 +2176,11 @@ h6 {
 
 @media (max-width: 576px) {
   #supporters .title {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   #supporters .subtitle {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
@@ -2453,6 +2481,16 @@ h6 {
   right: -20px;
   bottom: -20px;
   transform: rotate(45deg);
+}
+
+#schedule .br-schedule {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  #schedule .br-schedule {
+    display: initial;
+  }
 }
 
 @media (max-width: 767px) {

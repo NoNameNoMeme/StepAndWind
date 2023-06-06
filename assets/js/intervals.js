@@ -26,15 +26,18 @@ function sendForm(formHTML) {
       "Content-Type": "multipart/form-data",
     },
   };
+  console.log(formDataObj);
+  console.log(config);
   axios
-    .post(`https://fest.stepiveter.ru/intervals`, formDataObj, config)
+    .post(`https://fest.stepiveter.ru/payment_link`, formDataObj, config)
     .then(function (response) {
       // handle success
-      if (!alert("Вы успешно записались!")) location.reload();
+        console.log(response.data);
+      if (!alert("Вы будете перенаправлены на оплату билета!")) location.replace(response.data);
     })
     .catch(function (error) {
       // handle error
-      if (!alert("Ошибка при записи. Попробуйте снова!")) location.reload();
+      if (!alert("Ошибка при покупке. Попробуйте снова!")) location.reload();
     });
 }
 
