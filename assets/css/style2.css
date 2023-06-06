@@ -722,7 +722,7 @@ h6 {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-#about {
+#about2 {
   /* background: url("../img/about-bg.png"); */
   background-color: #00a2c0;
   background-size: cover;
@@ -736,35 +736,35 @@ h6 {
   align-items: center;
 }
 
-#about .title-main {
+#about2 .title-main {
   color: #ffffff;
   font-size: 70px;
   font-weight: 400;
   margin-bottom: 15px;
 }
 
-#about .title {
+#about2 .title {
   color: #f44c43;
   font-size: 70px;
   font-weight: 400;
   margin-bottom: 15px;
 }
 
-#about .subtitle {
+#about2 .subtitle {
   color: #f44c43;
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 15px;
 }
 
-#about .white-box {
+#about2 .white-box {
   background-color: #ffffff;
   padding: 30px 40px;
   border-radius: 25px;
   /*height: 600px;*/
 }
 
-#about .white-box__text {
+#about2 .white-box__text {
   font-size: 16px;
   color: #000;
   text-align: justify;
@@ -772,43 +772,43 @@ h6 {
   margin-bottom: 40px;
 }
 
-#about .white-box__text .big-red {
+#about2 .white-box__text .big-red {
   color: #f44c43;
   font-size: 26px;
 }
 
 @media (max-width: 767px) {
-  #about .white-box {
+  #about2 .white-box {
     padding: 20px;
   }
 
-  #about .white-box__text {
+  #about2 .white-box__text {
     font-size: 14px;
     line-height: 24px;
   }
 }
 
 @media (max-width: 576px) {
-  #about .title {
+  #about2 .title {
     font-size: 50px;
   }
 
-  #about .white-box {
+  #about2 .white-box {
     padding: 20px;
   }
 
-  #about .white-box__text {
+  #about2 .white-box__text {
     font-size: 14px;
     line-height: 24px;
   }
 
-  #about .white-box__text .big-red {
+  #about2 .white-box__text .big-red {
     font-size: 20px;
   }
 }
 
 @media (min-width: 1024px) {
-  #about {
+  #about2 {
     background-attachment: fixed;
   }
 }
@@ -824,7 +824,7 @@ h6 {
   right: 0;
 }*/
 
-#about h3 {
+#about2 h3 {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
@@ -2423,27 +2423,27 @@ h6 {
   text-align: center;
 }
 
-#about .circle {
+#about2 .circle {
   position: absolute;
   z-index: 0;
   left: 200px;
   bottom: -200px;
 }
 
-#about .wave-1 {
+#about2 .wave-1 {
   position: absolute;
   z-index: 0;
   bottom: 400px;
 }
 
-#about .wave-2 {
+#about2 .wave-2 {
   position: absolute;
   z-index: 0;
   bottom: 400px;
   right: 0;
 }
 
-#about .save {
+#about2 .save {
   width: 300px;
   position: absolute;
   z-index: 0;
@@ -2451,7 +2451,7 @@ h6 {
   right: -50px;
 }
 
-#about .sun {
+#about2 .sun {
   width: 500px;
   position: absolute;
   z-index: 0;
@@ -2460,11 +2460,11 @@ h6 {
 }
 
 @media (max-width: 767px) {
-  #about .wave-2 {
+  #about2 .wave-2 {
     visibility: hidden;
   }
 
-  #about .circle {
+  #about2 .circle {
     visibility: hidden;
   }
 }
