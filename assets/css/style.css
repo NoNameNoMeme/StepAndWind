@@ -730,7 +730,7 @@ h6 {
   position: relative;
   color: #fff;
   padding: 30px 0;
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 #about .title {
