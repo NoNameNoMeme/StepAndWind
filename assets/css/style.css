@@ -94,11 +94,29 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #f94a6a;
+  background: #000000;
   color: #fff;
 }
 
 .back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.random-class {
+  position: fixed;
+  right: 60px;
+  bottom: 15px;
+  z-index: 996;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  visibility: hidden;
+  opacity: 0;
+  font-weight: bold;
+}
+
+.random-class.active {
   visibility: visible;
   opacity: 1;
 }

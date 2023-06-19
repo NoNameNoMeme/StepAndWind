@@ -113,6 +113,19 @@
     onscroll(document, toggleBacktotop);
   }
 
+  let randomClass = select(".random-class");
+  if (randomClass) {
+    const toggleRandomClass = () => {
+      if (window.scrollY > 100) {
+        randomClass.classList.add("active");
+      } else {
+        randomClass.classList.remove("active");
+      }
+    };
+    window.addEventListener("load", toggleRandomClass);
+    onscroll(document, toggleRandomClass);
+  }
+
   /**
    * Mobile nav toggle
    */
