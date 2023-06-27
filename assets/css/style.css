@@ -2147,8 +2147,8 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid #e0e5fa;
-    border-bottom: 1px solid #e0e5fa;
+    /*border-right: 1px solid #e0e5fa;
+    border-bottom: 1px solid #e0e5fa;*/
     overflow: hidden;
     background: rgba(255, 255, 255, 0.5);
     height: 140px;
@@ -2591,3 +2591,37 @@ h6 {
   left: 70px;
   transform: rotate(30deg);
 }
+
+.thanks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.thank {
+  padding: 10px;
+  width: 33%;
+}
+
+.craft{
+  width: 100%;
+}
+
+.ostrov {
+  width: 100%;
+}
+
+
+
+@media (max-width: 767px) {
+  .thank {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header .free-text {
+    font-size: 14px;
+  }
+}
+
