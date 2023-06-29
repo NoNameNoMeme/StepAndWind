@@ -2223,7 +2223,7 @@ h6 {
 
 @media (max-width: 480px) {
   .img-fluid {
-    max-width: 350%;
+    max-width: 200%;
     height: auto;
   }
 }
