@@ -1270,6 +1270,13 @@ h6 {
   margin-bottom: 15px;
 }
 
+#supporters .subtitle2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
 #supporters .white-box {
   background-color: #ffffff;
   padding: 30px 0;
