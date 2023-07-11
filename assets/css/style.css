@@ -2635,3 +2635,51 @@ h6 {
   }
 }
 
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.day {
+  padding: 20px;
+  width: 30%;
+  color: #000000;
+
+  flex: 1 1 auto;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.day-title {
+  font-family: "Bebas Neue", sans-serif;
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  color: #f44c43;
+  margin-bottom: 10px;
+}
+
+.about-fest {
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.about-fest__title {
+  display: block;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 34px;
+  color: #f44c43;
+  text-align: center;
+}
+
+.about-fest__text {
+  text-align: center;
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  .day {
+    width: 100%;
+  }
+}
