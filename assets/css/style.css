@@ -1559,6 +1559,45 @@ h6 {
   border-radius: 25px;
 }
 
+.day-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 2px dotted #00a2c0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.time-wrapper {
+  text-align: left;
+}
+
+@media (max-width: 991px) {
+  .time-wrapper {
+    text-align: center;
+  }
+}
+
+.day-item-time {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 24px;
+  color: #00a2c0;
+}
+
+.day-item-title {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 30px;
+  color: #000000;
+}
+
+@media (max-width: 991px) {
+  .day-item-title {
+    margin-bottom: 15px;
+  }
+}
+
 .ticket-item {
   display: flex;
   align-items: center;
@@ -1624,6 +1663,22 @@ h6 {
   #tickets .title {
     font-size: 50px;
   }
+}
+
+.free-btn-2 {
+  color: #eace42;
+  /*background: #f6d52f;*/
+  background: #000000;
+  /*padding: 7px 22px;*/
+  padding: 10px 40px;
+  border-radius: 50px;
+  /*border: 2px solid #f6d52f;*/
+  transition: all ease-in-out 0.3s;
+  font-weight: 500;
+  line-height: 1;
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 30px;
+  white-space: nowrap;
 }
 
 /*--------------------------------------------------------------
@@ -2660,6 +2715,10 @@ h6 {
   margin-bottom: 10px;
 }
 
+.day-subtitle {
+  text-align: center;
+}
+
 .about-fest {
   color: #000000;
   margin-bottom: 20px;
@@ -2682,4 +2741,48 @@ h6 {
   .day {
     width: 100%;
   }
+}
+
+.test-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.test-item {
+  padding: 20px;
+  border: 2px solid #f44c43;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.test-item__title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.test-item__info {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.test-item__info p {
+  margin-bottom: 0;
+}
+
+.test-item__gallery {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(95px, 350px));
+  grid-gap: 10px;
+}
+
+@media (max-width: 767px) {
+  .test-item__gallery {
+    grid-template-columns: repeat(2, minmax(95px, 350px));
+  }
+}
+
+.test-item__gallery img {
+  width: 100%;
 }
