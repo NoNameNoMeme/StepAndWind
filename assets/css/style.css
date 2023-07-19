@@ -2751,12 +2751,18 @@ h6 {
 
 .test-item {
   padding: 20px;
-  border: 2px solid #f44c43;
+  border: 3px solid #f44c43;
   width: 100%;
   border-radius: 20px;
 }
 
 .test-item__title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.test-item__subtitle {
   text-align: center;
   margin-bottom: 15px;
 }
@@ -2768,6 +2774,7 @@ h6 {
 
 .test-item__info p {
   margin-bottom: 0;
+  font-size: 14px;
 }
 
 .test-item__gallery {
@@ -2775,6 +2782,13 @@ h6 {
   display: grid;
   grid-template-columns: repeat(3, minmax(95px, 350px));
   grid-gap: 10px;
+  margin-bottom: 30px;
+}
+
+.test-item__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 767px) {
