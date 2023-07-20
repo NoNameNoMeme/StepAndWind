@@ -360,7 +360,7 @@
                       <div class="day-item-title">Экскурсии на пивоваренный завод КРАФТ</div>
                     </div>
                     <div class="col-lg-3 col-12">
-                      <span class="ticket-btn" data-bs-toggle="modal" data-bs-target="#buy-modal">Записаться</span>
+                      <span class="ticket-btn" data-bs-toggle="modal" data-bs-target="#zavod-modal">Записаться</span>
                     </div>
                   </div>
                   <div class="day-item">
@@ -393,7 +393,7 @@
                       <div class="day-item-title">Программа с дегустациями</div>
                     </div>
                     <div class="col-lg-3 col-12">
-                      <span class="ticket-btn" data-bs-toggle="modal" data-bs-target="#buy-modal">Выбрать место</span>
+                      <span class="ticket-btn" data-bs-toggle="modal" data-bs-target="#degustation-modal">Выбрать место</span>
                     </div>
                   </div>
                   <div class="day-item">
@@ -413,7 +413,7 @@
 
               <!-- Расписание День 2 -->
               <div role="tabpanel" class="col-lg-12 tab-pane fade" id="day-2">
-                <div class="row schedule-item justify-content-center">
+                <div class="row schedule-item first justify-content-center">
                   <p class="title">День 2: Основной день феста "Степная история" / 12:00 - 22:00</p>
                   <div>
                     <p class="white-box__text">
@@ -440,7 +440,7 @@
 
               <!-- Расписание День 3 -->
               <div role="tabpanel" class="col-lg-12 tab-pane fade" id="day-3">
-                <div class="row schedule-item justify-content-center">
+                <div class="row schedule-item first justify-content-center">
                   <p class="title">День 3: Тусовка у бассейна на базе отдыха "Остров" / 12:00 - 24:00</p>
                   <div>
                     <p class="white-box__text">
@@ -1405,6 +1405,28 @@
                         </div>
                       </a>
                     </li>
+                    <li class="glide__slide">
+                      <a href="https://2gis.ru/orenburg/firm/70000001032827593?m=55.133442%2C51.736062%2F16" target="_blank">
+                        <div class="supporter-logo">
+                          <img
+                                  src="assets/img/sponsors/zhelty_fonar.png"
+                                  class="img-fluid"
+                                  alt=""
+                          />
+                        </div>
+                      </a>
+                    </li>
+                    <li class="glide__slide">
+                      <a href="https://2gis.ru/orenburg/firm/70000001032827593?m=55.133442%2C51.736062%2F16" target="_blank">
+                        <div class="supporter-logo">
+                          <img
+                                  src="assets/img/sponsors/zavod.png"
+                                  class="img-fluid"
+                                  alt=""
+                          />
+                        </div>
+                      </a>
+                    </li>
                   </ul>
                 </div>
                 <div class="glide__arrows" data-glide-el="controls">
@@ -1904,6 +1926,7 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
 
     <div id="buy-modal" class="modal fade">
@@ -1938,6 +1961,16 @@
                         required
                 />
               </div>
+              <div class="form-group mt-3">
+                <input
+                        type="tel"
+                        class="form-control"
+                        name="tel"
+                        placeholder="Телефон"
+                        mask=""
+                        required
+                />
+              </div>
               <!--<input type="text" name="type" value="peppers" hidden/>-->
 
               <div class="form-group mt-3">
@@ -1968,6 +2001,159 @@
                         id="submit"
                         name="submit"
                         class="signup-btn submit-btn">Купить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="zavod-modal" class="modal fade">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Экскурсия на пивоваренный завод "Крафт"</h4>
+            <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="needs-validation" novalidate>
+              <div class="form-group">
+                <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        placeholder="Имя"
+                        required
+                />
+              </div>
+              <div class="form-group mt-3">
+                <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        placeholder="Почта"
+                        required
+                />
+              </div>
+              <div class="form-group mt-3">
+                <input
+                        type="tel"
+                        class="form-control"
+                        name="tel"
+                        placeholder="Телефон"
+                        mask=""
+                        required
+                />
+              </div>
+              <!--<input type="text" name="type" value="peppers" hidden/>-->
+
+              <div class="form-group mt-3">
+                <select
+                        id="signup"
+                        name="ticket_type"
+                        class="form-select"
+                        required
+                >
+                  <option value="">-- Выбери время экскурсии --</option>
+                  <option value="flex">11:30 - 14:30</option>
+                  <option value="basik">13:30 - 16:30</option>
+                  <option value="double-kill">15:30 - 18:30</option>
+                </select>
+              </div>
+              <div class="mt-3 zavod-text">
+                <p>Экскурсия длится 2 часа. Полчаса на дорогу туда, полчаса на дорогу обратно. Сбор не позднее
+                  указанного времени по адресу: ул. Березка 22. Будет курсировать автобус.
+                  Например: сбор на Березке 22 до 11:30. В 11:30 Автобус отправляется. С 12:00 до 14:00 экскурсия по
+                  «Крафту». В 14:00 - автобус забирает из «Крафта» и привозит обратно на Березку 22.</p>
+              </div>
+              <div class="text-center mt-3">
+                <button
+                        type="button"
+                        id="submit"
+                        name="submit"
+                        class="signup-btn submit-btn">Записаться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="degustation-modal" class="modal fade">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Программа с дегустациями</h4>
+            <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="needs-validation" novalidate>
+              <div class="form-group">
+                <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        placeholder="Имя"
+                        required
+                />
+              </div>
+              <div class="form-group mt-3">
+                <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        placeholder="Почта"
+                        required
+                />
+              </div>
+              <div class="form-group mt-3">
+                <input
+                        type="tel"
+                        class="form-control"
+                        name="tel"
+                        placeholder="Телефон"
+                        mask=""
+                        required
+                />
+              </div>
+              <!--<input type="text" name="type" value="peppers" hidden/>-->
+
+              <div class="form-group mt-3">
+                <select
+                        id="signup"
+                        name="ticket_type"
+                        class="form-select"
+                        required
+                >
+                  <option value="">-- Выбери бар для дегустации --</option>
+                  <option value="method">Метод 20:00 - Заповедник  / 21:00 - Plague Brew</option>
+                  <option value="dom">Дом-Птолемей 20:00 - Coma / 21:00 - Red rocket</option>
+                  <option value="gorozhane">Горожане 20:00 - 4 brewers</option>
+                  <option value="jaws">Джавс 20:00 - Бродилка</option>
+                  <option value="svetly">Светлый 20:00 - Sabotage</option>
+                  <option value="cbs">КБШ 20:00 - Velka Morava</option>
+                  <option value="1743">1743 20:00 - Selfmade</option>
+                </select>
+              </div>
+              <div class="mt-3 degustation-text">
+                <p></p>
+              </div>
+              <div class="text-center mt-3">
+                <button
+                        type="button"
+                        id="submit"
+                        name="submit"
+                        class="signup-btn submit-btn">Записаться</button>
               </div>
             </form>
           </div>

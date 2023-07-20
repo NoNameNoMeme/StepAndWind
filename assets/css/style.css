@@ -1050,6 +1050,10 @@ h6 {
   #schedule .white-box {
     padding: 40px;
   }
+
+  #schedule .schedule-item .title {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1063,10 +1067,6 @@ h6 {
 
   #schedule .white-box__text {
     font-size: 16px;
-  }
-
-  #schedule .schedule-item .title {
-    font-size: 36px;
   }
 }
 
@@ -1156,15 +1156,15 @@ h6 {
   color: #000;
 }
 
-#schedule .row.schedule-item.first {
-  border: none;
-  border-bottom: 3px dotted #00a2c0;
-}
 
 #schedule .row.schedule-item {
   padding: 10px 0;
   margin-bottom: 0px;
   border-top: 1px solid #1a1e21;
+}
+
+#schedule .row.schedule-item.first {
+  border: none;
 }
 
 #schedule .cool-btn {
@@ -1577,12 +1577,18 @@ h6 {
   border-radius: 25px;
 }
 
+@media (max-width: 767px) {
+  #tickets .white-box {
+    padding: 10px 40px;
+  }
+}
+
 .day-item {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  border-bottom: 2px dotted #00a2c0;
+  border-top: 2px dotted #00a2c0;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
@@ -1610,9 +1616,10 @@ h6 {
   color: #000000;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .day-item-title {
     margin-bottom: 15px;
+    font-size: 26px;
   }
 }
 
@@ -1637,15 +1644,20 @@ h6 {
   font-family: "Bebas Neue", "Raleway", sans-serif;
   font-size: 34px;
   color: #f44c43;
+  margin-bottom: 10px;
 }
 
 .ticket-title {
   font-family: "Bebas Neue", "Raleway", sans-serif;
-  font-size: 30px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
 .ticket-subtitle {
-
+  text-align: center;
+  font-size: 16px;
 }
 
 .ticket-cost {
@@ -1677,9 +1689,26 @@ h6 {
   cursor: pointer;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
+  .ticket-name {
+    font-size: 28px;
+  }
+
   #tickets .title {
     font-size: 50px;
+  }
+
+  .ticket-btn {
+    font-size: 26px;
+  }
+
+  .ticket-subtitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .ticket-cost {
+    font-size: 26px;
   }
 }
 
@@ -1697,6 +1726,13 @@ h6 {
   font-family: "Bebas Neue", "Raleway", sans-serif;
   font-size: 30px;
   white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .free-btn-2 {
+    font-size: 26px;
+    padding: 8px 30px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2734,7 +2770,7 @@ h6 {
   font-family: "Bebas Neue", sans-serif;
   display: block;
   text-align: center;
-  font-size: 28px;
+  font-size: 34px;
   color: #f44c43;
   margin-bottom: 10px;
   line-height: 1;
@@ -2742,6 +2778,7 @@ h6 {
 
 .day-subtitle {
   text-align: center;
+  font-size: 18px;
 }
 
 .about-fest {
@@ -2762,11 +2799,30 @@ h6 {
 .about-fest__text {
   text-align: center;
   font-size: 18px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 991px) {
   .day {
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .day-title {
+    font-size: 28px;
+  }
+
+  .day-subtitle {
+    font-size: 16px;
+  }
+
+  .about-fest__title {
+    font-size: 28px;
+  }
+
+  .about-fest__text {
+    font-size: 16px;
   }
 }
 
@@ -2798,7 +2854,7 @@ h6 {
 
 .test-item__info {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .test-item__info p {
@@ -2833,6 +2889,10 @@ h6 {
     font-size: 16px;
   }
 
+  .test-item__info {
+    margin-bottom: 15px;
+  }
+
   .test-item__info p {
     font-size: 14px;
   }
@@ -2840,4 +2900,8 @@ h6 {
 
 .test-item__gallery img {
   width: 100%;
+}
+
+.zavod-text {
+  font-size: 14px;
 }
