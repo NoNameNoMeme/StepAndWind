@@ -988,7 +988,8 @@ h6 {
 }
 
 #schedule .white-box__text {
-  font-size: 24px;
+  font-size: 20px;
+  margin-bottom: 0px;
 }
 
 #schedule .schedule-item .title {
@@ -1061,7 +1062,7 @@ h6 {
   }
 
   #schedule .white-box__text {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   #schedule .schedule-item .title {
@@ -1098,12 +1099,11 @@ h6 {
 }
 
 #schedule .schedule-item {
-  /* border-bottom: 1px solid #cad4f6; */
-  /* padding-top: 15px;*/
-  padding-bottom: 20px;
-  padding-top: 20px;
+  margin-bottom: 20px;
   transition: background-color ease-in-out 0.3s;
-  border-bottom: 1px solid #1a1e21;
+  /*border-bottom: 1px solid #1a1e21;*/
+  display: flex;
+  align-items: center;
 }
 
 #schedule .schedule-item:last-child {
@@ -1125,6 +1125,7 @@ h6 {
 #schedule .schedule-item time {
   padding-bottom: 5px;
   display: inline-block;
+  font-size: 16px;
 }
 
 #schedule .schedule-item .speaker {
@@ -1155,6 +1156,17 @@ h6 {
   color: #000;
 }
 
+#schedule .row.schedule-item.first {
+  border: none;
+  border-bottom: 3px dotted #00a2c0;
+}
+
+#schedule .row.schedule-item {
+  padding: 10px 0;
+  margin-bottom: 0px;
+  border-top: 1px solid #1a1e21;
+}
+
 #schedule .cool-btn {
   font-size: 40px;
   font-family: "Bebas Neue", "Raleway", sans-serif;
@@ -1166,6 +1178,12 @@ h6 {
   text-align: center;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  #schedule .schedule-item {
+    padding: 10px 0;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1248,7 +1266,7 @@ h6 {
 # Sponsors Section
 --------------------------------------------------------------*/
 #supporters {
-  padding: 60px 0;
+  padding: 30px 0;
   background-color: #00a2c0;
 }
 
@@ -1275,6 +1293,12 @@ h6 {
   font-size: 24px;
   color: #ffffff;
   margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  #supporters .subtitle2 {
+    font-size: 16px;
+  }
 }
 
 #supporters .white-box {
@@ -1317,12 +1341,6 @@ h6 {
 @media (max-width: 767px) {
   #supporters .glide__name {
     font-size: 14px;
-  }
-}
-
-@media (max-width: 440px) {
-  #supporters .glide__name {
-    font-size: 12px;
   }
 }
 
@@ -2628,6 +2646,12 @@ h6 {
   transform: rotate(-30deg);
 }
 
+@media (max-width: 767px) {
+  #schedule .eat .white-box .coctaile {
+    display: none;
+  }
+}
+
 #schedule .eat .white-box .watermelon {
   width: 150px;
   position: absolute;
@@ -2713,6 +2737,7 @@ h6 {
   font-size: 28px;
   color: #f44c43;
   margin-bottom: 10px;
+  line-height: 1;
 }
 
 .day-subtitle {
@@ -2730,6 +2755,8 @@ h6 {
   font-size: 34px;
   color: #f44c43;
   text-align: center;
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
 .about-fest__text {
@@ -2750,7 +2777,7 @@ h6 {
 }
 
 .test-item {
-  padding: 20px;
+  padding: 10px;
   border: 3px solid #f44c43;
   width: 100%;
   border-radius: 20px;
@@ -2758,13 +2785,15 @@ h6 {
 
 .test-item__title {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   font-weight: 700;
+  font-size: 24px;
 }
 
 .test-item__subtitle {
   text-align: center;
   margin-bottom: 15px;
+  font-size: 20px;
 }
 
 .test-item__info {
@@ -2774,7 +2803,7 @@ h6 {
 
 .test-item__info p {
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .test-item__gallery {
@@ -2794,6 +2823,18 @@ h6 {
 @media (max-width: 767px) {
   .test-item__gallery {
     grid-template-columns: repeat(2, minmax(95px, 350px));
+  }
+
+  .test-item__title {
+    font-size: 16px;
+  }
+
+  .test-item__subtitle {
+    font-size: 16px;
+  }
+
+  .test-item__info p {
+    font-size: 14px;
   }
 }
 
