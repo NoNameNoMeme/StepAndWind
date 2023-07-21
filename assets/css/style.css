@@ -1616,10 +1616,28 @@ h6 {
   color: #000000;
 }
 
+.day-item-subtitle {
+  font-size: 18px;
+}
+
+.day-description p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 767px) {
   .day-item-title {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 26px;
+  }
+
+  .day-item-subtitle {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  #schedule .day-description p {
+    font-size: 16px;
   }
 }
 
@@ -1713,9 +1731,9 @@ h6 {
 }
 
 .free-btn-2 {
-  color: #eace42;
+  color: #f44c43;
   /*background: #f6d52f;*/
-  background: #000000;
+  /*background: #000000;*/
   /*padding: 7px 22px;*/
   padding: 10px 40px;
   border-radius: 50px;
@@ -2903,5 +2921,10 @@ h6 {
 }
 
 .zavod-text {
+  font-size: 14px;
+}
+
+.degustation-text {
+  text-align: center;
   font-size: 14px;
 }
