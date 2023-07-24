@@ -85,17 +85,13 @@ h6 {
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
+  text-shadow: 2px 2px 2px #f44c43;
 }
 
 .back-to-top i {
   font-size: 28px;
   color: #fff;
   line-height: 0;
-}
-
-.back-to-top:hover {
-  background: #000000;
-  color: #fff;
 }
 
 .back-to-top.active {
@@ -114,6 +110,7 @@ h6 {
   visibility: hidden;
   opacity: 0;
   font-weight: bold;
+  text-shadow: 2px 2px 2px #f44c43;
 }
 
 .random-class.active {
@@ -1262,6 +1259,42 @@ h6 {
   transform: scale(1.1);
 }
 
+.venue-gallery iframe {
+  width: 100%;
+  height: 486px;
+}
+
+@media (max-width: 1400px) {
+  .venue-gallery iframe {
+    height: 418px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .venue-gallery iframe {
+    height: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .venue-gallery iframe {
+    height: 522px;
+  }
+}
+
+@media (max-width: 991px) {
+  .venue-gallery iframe {
+    height: 387px;
+  }
+}
+
+@media (max-width: 484px) {
+  .venue-gallery iframe {
+    height: 274px;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Sponsors Section
 --------------------------------------------------------------*/
@@ -1700,6 +1733,7 @@ h6 {
   font-family: "Bebas Neue", "Raleway", sans-serif;
   font-size: 30px;
   white-space: nowrap;
+  border: none;
 }
 
 .ticket-btn:hover {
@@ -2926,5 +2960,33 @@ h6 {
 
 .degustation-text {
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .degustation-text {
+    font-size: 14px;
+  }
+}
+
+.square-holder {
+  padding:30px;
+  border: 1px solid #cecece;
+  align-items: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:20px;
+  background-color:#f1f1f1;
+  min-height:200px
+}
+
+.square-holder img {
+  max-width:100%;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+
+.square-holder:hover img{
+  filter:none;
 }
