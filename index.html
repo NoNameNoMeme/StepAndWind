@@ -392,9 +392,9 @@
                               class="ticket-btn intervals-btn"
                               data-type="walk"
                               data-bs-toggle="modal"
-                              data-bs-target="#walk-modal"
+
                       >
-                        Записаться
+                        Скоро
                       </button>
                     </div>
                   </div>
@@ -501,7 +501,37 @@
                     </div>
                   </div>
                   <div class="day-item">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                      <div class="day-item-title">Фудкорт:</div>
+                      <span style="color: #00a2c0">Бургеры от Чопперс</span> - вкуснейшие, Оренбургские.<br>
+                      <span style="color: #00a2c0">Кухня от Влада</span> - местный мультиинструментальный повар.<br>
+                      <span style="color: #00a2c0">ФатВеган</span> - веганская кухня.<br>
+                      <span style="color: #00a2c0">Атлас Кофе</span> - чудесная оренбургская кофейня, с безалкогольными интерпретациями алкогольных напитков. Ассортимент для любителей и профи кофепития.<br>
+                      <span style="color: #00a2c0">Паровоз Мяса</span> - очень много вкусного мяса, едим на корпоративных выездах, возможно прямо сейчас.<br>
+                      <span style="color: #00a2c0">Точка с Арбузами</span> - гора Арбузов, чисто Оренбургский прикол.<br>
+                      <span style="color: #00a2c0">Сырная лавка</span> - закусить топчики необходимо.<br>
+                      *Ассортимент фудкорта не входит в стоимость билета. Возьми с собой немножко денежек, чтобы покусать 🙂
+                    </div>
+                    <div class="col-lg-2"></div>
+                  </div>
+                  <div class="day-item">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                      <div class="day-item-title">Музыкальный Лайнап:</div>
+                      <span style="color: #00a2c0">13.00 - 15.00</span> - DJ Le Charlatan (Олег Полежаев)<br>
+                      <span style="color: #00a2c0">15.00 - 17.00</span> - DJ-сет от Red Button<br>
+                      <span style="color: #00a2c0">17.00 - 18.00</span> - Леденёв (классное авторское творчество)<br>
+                      <span style="color: #00a2c0">18.00 - 20.30</span> - DJ-сет от Sabotage<br>
+                      <span style="color: #00a2c0">20.30 - 21.00</span> - Вокальный ансамбль «Гармония»<br>
+                      <span style="color: #00a2c0">21.00 - 22.00</span> - кавер-группа Урал-Миссисипи<br>
+                      <span style="color: #00a2c0">22.00</span> - тапрум - DJ Батюшка Стис<br>
+                    </div>
+                    <div class="col-lg-2"></div>
+                  </div>
+                  <div class="day-item">
                     <div class="day-description">
+                      <p>Активности парка: Бирпонг, Тир / Боулинг, Аквагрим 18+, Конкурс Мокрых Маек, ФОТОЗОНА, Квэст, Большая Дженга, Пивная йога, Алкомарионетка, Теннис Настольный, Фейерверк, Дегустация непонятных напитков. </p>
                       <p>Полная
                         <a style="color: #f44c43" href="assets/docs/buklet.pdf" target="_blank">программа</a> фестиваля.
                       </p>
@@ -1572,7 +1602,7 @@
                       </a>
                     </li>
                     <li class="glide__slide">
-                      <a href="https://2gis.ru/orenburg/firm/70000001055668610?m=55.095409%2C51.763689%2F16" target="_blank">
+                      <a href="https://2gis.ru/orenburg/branches/70000001021250364" target="_blank">
                         <div class="supporter-logo">
                           <img
                                   src="assets/img/sponsors/enot.png"
@@ -1942,9 +1972,9 @@
                     </div>
                   </div>
                   <div class="col-lg-2 ticket-right">
-                    <div class="ticket-cost">10000 руб</div>
+                    <div class="ticket-cost">SOLD OUT</div>
                     <div>
-                      <span class="ticket-btn" data-bs-toggle="modal" data-bs-target="#buy-modal">Купить</span>
+                      <span class="ticket-btn" data-bs-toggle="modal" disabled="disabled" style="text-decoration: line-through">Купить</span>
                     </div>
                   </div>
                 </div>
@@ -2139,7 +2169,7 @@
                   <option value="flex">FLEX</option>
                   <option value="basik">BASIK</option>
                   <option value="double-kill">DOUBLE KILL</option>
-                  <option value="rampage">RAMPAGE</option>
+                  <option value="rampage" disabled>RAMPAGE</option>
                 </select>
               </div>
               <div class="form-group mt-3">
@@ -2188,6 +2218,15 @@
               </div>
               <div class="form-group mt-3">
                 <input
+                        type="text"
+                        class="form-control"
+                        name="surname"
+                        placeholder="Фамилия"
+                        required
+                />
+              </div>
+              <div class="form-group mt-3">
+                <input
                         type="email"
                         class="form-control"
                         name="email"
@@ -2199,25 +2238,21 @@
                 <input
                         type="tel"
                         class="form-control"
-                        name="tel"
+                        name="phone"
                         placeholder="Телефон"
                         mask=""
                         required
                 />
               </div>
-              <!--<input type="text" name="type" value="peppers" hidden/>-->
+              <input type="text" name="type" value="zavod" hidden/>
 
               <div class="form-group mt-3">
                 <select
                         id="signup"
-                        name="ticket_type"
+                        name="time"
                         class="form-select"
                         required
                 >
-                  <option value="">-- Выбери время экскурсии --</option>
-                  <option value="flex">11:30 - 14:30</option>
-                  <option value="basik">13:30 - 16:30</option>
-                  <option value="double-kill">15:30 - 18:30</option>
                 </select>
               </div>
               <div class="mt-3 zavod-text">
@@ -2231,7 +2266,7 @@
                         type="button"
                         id="submit"
                         name="submit"
-                        class="signup-btn submit-btn">Записаться</button>
+                        class="signup-btn btn-fest">Записаться</button>
               </div>
             </form>
           </div>

@@ -1,10 +1,17 @@
 const btnsInterval = document.querySelectorAll(".intervals-btn");
 const btnsSubmit = document.querySelectorAll(".submit-btn");
+const btnsFest = document.querySelectorAll(".btn-fest");
 
 btnsSubmit.forEach((button) => {
   button.addEventListener("click", () => {
     sendForm(button.closest("form"));
   });
+});
+
+btnsFest.forEach((button) => {
+    button.addEventListener("click", () => {
+        sendFormFest(button.closest("form"));
+    });
 });
 
 btnsInterval.forEach((element) => {
@@ -38,6 +45,30 @@ function sendForm(formHTML) {
       // handle error
       if (!alert("Ошибка при покупке. Попробуйте снова!")) location.reload();
     });
+}
+
+function sendFormFest(formHTML) {
+    const form = new FormData(formHTML);
+    if (!validForm(formHTML)) {
+        return false;
+    }
+    const formDataObj = {};
+    form.forEach((value, key) => (formDataObj[key] = value));
+    const config = {
+        headers: {
+            "Content-Type": "multipart/form-data",
+        },
+    };
+    axios
+        .post(`https://fest.stepiveter.ru/intervals`, formDataObj, config)
+        .then(function (response) {
+            // handle success
+            if (!alert("Вы успешно записались!")) location.reload();
+        })
+        .catch(function (error) {
+            // handle error
+            if (!alert("Ошибка при записи. Попробуйте снова!")) location.reload();
+        });
 }
 
 function getIntervals(btn) {
