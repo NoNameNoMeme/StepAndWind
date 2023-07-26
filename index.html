@@ -390,11 +390,12 @@
                     <div class="col-lg-3 col-12">
                       <button
                               class="ticket-btn intervals-btn"
+                              type="button"
                               data-type="walk"
                               data-bs-toggle="modal"
-
+                              data-bs-target="#walk-modal"
                       >
-                        Скоро
+                        Записаться
                       </button>
                     </div>
                   </div>
@@ -1473,7 +1474,7 @@
                       <a href="https://2gis.ru/orenburg/firm/70000001044395408?m=55.101311%2C51.764384%2F16" target="_blank">
                         <div class="supporter-logo">
                           <img
-                                  src="assets/img/supporters 2023/fatvegan.png"
+                                  src="assets/img/supporters 2023/fatvegan.webp"
                                   class="img-fluid"
                                   alt=""
                           />
@@ -1908,6 +1909,7 @@
           <div class="section-header">
             <h2 class="title">Билеты</h2>
             <div class="white-box">
+              <h2 class="price-info">Цены актуальны до 30 июля 23:59. После - будет цена без скидки</h2>
               <div class="row">
                 <div class="ticket-item">
                   <div class="col-lg-2">
@@ -1920,7 +1922,7 @@
                       и все активности этого дня.</div>
                   </div>
                   <div class="col-lg-2 ticket-right">
-                    <div class="ticket-cost">3000 руб</div>
+                    <div class="ticket-cost">3000 руб<span class="old-price">3490</span></div>
                     <div>
                       <span class="ticket-btn" data-bs-toggle="modal" data-bs-target="#buy-modal">Купить</span>
                     </div>
@@ -1936,7 +1938,7 @@
                       отдыха «Остров», безлимитные напитки, трансфер на базу отдыха на автобусе. </div>
                   </div>
                   <div class="col-lg-2 ticket-right">
-                    <div class="ticket-cost">3000 руб</div>
+                    <div class="ticket-cost">3000 руб<span class="old-price">3490</span></div>
                     <div>
                       <span class="ticket-btn" data-bs-toggle="modal" data-bs-target="#buy-modal">Купить</span>
                     </div>
@@ -1951,7 +1953,7 @@
                     <div class="ticket-subtitle">Сюда входит всё, что входит в билеты FLEX и BASIK, только со скидочкой.</div>
                   </div>
                   <div class="col-lg-2 ticket-right">
-                    <div class="ticket-cost">5500 руб</div>
+                    <div class="ticket-cost">5500 руб<span class="old-price">6490</span></div>
                     <div>
                       <span class="ticket-btn" data-bs-toggle="modal" data-bs-target="#buy-modal">Купить</span>
                     </div>
@@ -2298,6 +2300,15 @@
               </div>
               <div class="form-group mt-3">
                 <input
+                        type="text"
+                        class="form-control"
+                        name="surname"
+                        placeholder="Фамилия"
+                        required
+                />
+              </div>
+              <div class="form-group mt-3">
+                <input
                         type="email"
                         class="form-control"
                         name="email"
@@ -2309,35 +2320,78 @@
                 <input
                         type="tel"
                         class="form-control"
-                        name="tel"
+                        name="phone"
                         placeholder="Телефон"
                         mask=""
                         required
                 />
               </div>
-              <!--<input type="text" name="type" value="peppers" hidden/>-->
+              <input type="text" name="type" value="walk" hidden/>
 
               <div class="form-group mt-3">
                 <select
                         id="signup"
-                        name="ticket_type"
+                        name="time"
                         class="form-select"
+                        style="font-size: 14px"
                         required
                 >
                 </select>
               </div>
-              <div class="mt-3 zavod-text">
-                <p>Экскурсия длится 2 часа. Полчаса на дорогу туда, полчаса на дорогу обратно. Сбор не позднее
-                  указанного времени по адресу: ул. Березка 22. Будет курсировать автобус.
-                  Например: сбор на Березке 22 до 11:30. В 11:30 Автобус отправляется. С 12:00 до 14:00 экскурсия по
-                  «Крафту». В 14:00 - автобус забирает из «Крафта» и привозит обратно на Березку 22.</p>
+              <div class="mt-3 zavod-text" style="overflow-x: scroll; display: flex; gap: 10px;">
+                <div class="zavod-wrapper">
+                  <p class="zavod-wrapper__title">1 экскурсия</p>
+                  <p class="zavod-wrapper__subtitle">Экскурсионный проект «Жизнь без звезд: гостиницы прошлых лет»</p>
+                  <p>
+                    Экскурсия даст возможность открыть для себя не просто старые гостиничные заведения, а гостиницы с большой историей и уникальной архитектурой! В ходе экскурсии можно узнать много новых и удивительных фактов, о которых большинство ни разу не слышали:
+                    - Какими были первые гостиницы Оренбурга?
+                    - Кто гостил в них более двух веков назад?
+                    - Какие тайны скрыты за стенами исторических зданий?
+                    - Почему и как гостиница «Американская» получила такое название?
+                    А главное будет возможность осмотреть некоторые здания бывших гостиниц изнутри, в которых просторные подъездные площадки, высокие потолки, чугунные лестницы с рисунками напоминают парадные Санкт-Петербурга.
+
+                    Длительность маршрута около 1 час.
+                    Сбор группы возле татарского театра (ул. Володарского, 10).
+                  </p>
+                </div>
+                <div class="zavod-wrapper">
+                  <p class="zavod-wrapper__title">2 экскурсия</p>
+                  <p class="zavod-wrapper__subtitle">Обзорная экскурсия по историческому центру города Оренбург</p>
+                  <p>
+                    Экскурсия познакомит Вас с шагающим городом. Мы расскажем о всех этапах основания города, посетим самые знаковые места, в которых происходило множество интересных историй, которые так отражают Оренбуржье. Ну, и ответим на главный вопрос: почему Оренбург назвали маленький Питер?
+                    И еще несколько интересных вопросом, ответы на которые Вы узнаете после экскурсии:
+                    ⁃ Где учился Гагарин?
+                    ⁃ Что с Уралом?
+                    ⁃ Зачем железные рельсы на набережной?
+                    ⁃ Что делал Пётр 1 в Оренбурге?
+                    ⁃ Где загадать желание в Оренбурге?
+                    ⁃ Как Децл оказался в Оренбурге?
+                    ⁃ Что делал Чкалов в Оренбурге?
+                    Еще много-много всего интересного…
+
+                    Длительность экскурсии 2-2,5 часа
+                    Начало маршрута: Пётр 1 на Марсовом поле.
+                  </p>
+                </div>
+                <div class="zavod-wrapper">
+                  <p class="zavod-wrapper__title">3 экскурсия</p>
+                  <p class="zavod-wrapper__subtitle">Экскурсия «Конфессии Оренбурга»</p>
+                  <p>
+                    Оренбург со дня своего основания был и остается многонациональным и многоконфессиональным регионом.
+                    Старообрядчество, Православие, Лютеранство, Иудаизм, Католицизм и Ислам. Все перечисленные религии имеют большое распространение в Оренбурге и Оренбургской области.
+                    В одной экскурсии совмещены осмотр Никольского собора, Евангелическо-лютеранской церкви, Оренбургской еврейской общины, Римско-католической церкви Божией Матери Лоретанской, мечети Хусаиния, церкви во имя Знамения Пресвятой Богородицы.
+
+                    Длительность: 2 часа
+                    Сбор: у Никольского собора, Чкалова 8
+                  </p>
+                </div>
               </div>
               <div class="text-center mt-3">
                 <button
                         type="button"
                         id="submit"
                         name="submit"
-                        class="signup-btn submit-btn">Записаться</button>
+                        class="signup-btn btn-fest">Записаться</button>
               </div>
             </form>
           </div>

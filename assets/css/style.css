@@ -555,6 +555,7 @@ h6 {
   border: 0;
   color: #ffffff;
   position: relative;
+  box-shadow: 3px 4px 1px #000;
 }
 
 .buy-ticket-btn:hover {
@@ -974,6 +975,10 @@ h6 {
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 15px;
+}
+
+#schedule .title-emoji {
+  font-size: 60px;
 }
 
 #schedule .white-box {
@@ -1612,7 +1617,7 @@ h6 {
 
 @media (max-width: 767px) {
   #tickets .white-box {
-    padding: 10px 40px;
+    padding: 20px 40px;
   }
 }
 
@@ -1717,6 +1722,28 @@ h6 {
   color: #00a2c0;
   text-align: center;
   margin-bottom: 10px;
+  position: relative;
+}
+
+.old-price {
+  position: absolute;
+  bottom: 20px;
+  color: #0000008a;
+}
+
+.old-price:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  border-bottom: 2px solid red;
+  transform: rotate(-7deg);
+}
+
+.price-info {
+  text-align: center;
+  color: #f44c43;
+  border-bottom: 2px solid;
 }
 
 .ticket-btn {
@@ -2989,4 +3016,24 @@ h6 {
 
 .square-holder:hover img{
   filter:none;
+}
+
+.zavod-wrapper {
+  border-radius: 20px;
+  border: 2px solid #f44c43;
+  padding: 10px;
+  margin-bottom: 10px;
+  min-width: 90%;
+}
+
+.zavod-wrapper__title {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  text-align: center;
+  color: #f44c43;
+  font-size: 20px;
+}
+
+.zavod-wrapper__subtitle {
+  text-align: center;
+  font-weight: 700;
 }
