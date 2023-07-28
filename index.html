@@ -383,18 +383,15 @@
                     </div>
                     <div class="col-lg-7 col-12">
                       <div class="day-item-title">Экскурсии по городу от тревел зон</div>
-                      <div class="day-item-subtitle">
-                        (расписание и точка сбора будут позже)
-                      </div>
                     </div>
                     <div class="col-lg-3 col-12">
                       <button
-                              class="ticket-btn intervals-btn"
+                              class="ticket-btn"
                               type="button"
-                              data-type="walk"
                               data-bs-toggle="modal"
+                              data-bs-target="#walk-modal"
                       >
-                        Скоро
+                        Записаться
                       </button>
                     </div>
                   </div>
@@ -521,7 +518,7 @@
                       <div class="day-item-title">Музыкальный Лайнап:</div>
                       <span style="color: #00a2c0">13.00 - 15.00</span> - DJ Le Charlatan (Олег Полежаев)<br>
                       <span style="color: #00a2c0">15.00 - 17.00</span> - DJ-сет от Red Button<br>
-                      <span style="color: #00a2c0">17.00 - 18.00</span> - Леденёв (классное авторское творчество)<br>
+                      <span style="color: #00a2c0">17.00 - 18.00</span> - LEDENEV<br>
                       <span style="color: #00a2c0">18.00 - 20.30</span> - DJ-сет от Sabotage<br>
                       <span style="color: #00a2c0">20.30 - 21.00</span> - Вокальный ансамбль «Гармония»<br>
                       <span style="color: #00a2c0">21.00 - 22.00</span> - кавер-группа Урал-Миссисипи<br>
@@ -1248,7 +1245,7 @@
                           />
                         </div>
                       </a>
-                      <p class="glide__name">"AF"<br>Санкт-Петербург</p>
+                      <p class="glide__name">"AF Brew"<br>Санкт-Петербург</p>
                     </li>
                     <!--<li class="glide__slide">
                       <a href="https://untappd.com/SteppeNwind" target="_blank">
@@ -2325,8 +2322,32 @@
                         required
                 />
               </div>
+              <p style="text-align: center" class="mt-3">Выбери экскурсию</p>
+              <div class="mt-3 many-walks">
+                <button
+                        type="button"
+                        id="submit"
+                        name="submit"
+                        data-type="walk"
+                        data-bs-target="#walk-modal"
+                        class="signup-btn intervals-btn">Гостиницы</button>
+                <button
+                        type="button"
+                        id="submit"
+                        name="submit"
+                        data-type="hostels"
+                        data-bs-target="#walk-modal"
+                        class="signup-btn intervals-btn">Обзорные</button>
+                <button
+                        type="button"
+                        id="submit"
+                        name="submit"
+                        data-type="church"
+                        data-bs-target="#walk-modal"
+                        class="signup-btn intervals-btn">Конфессии</button>
+              </div>
               <input type="text" name="type" value="walk" hidden/>
-
+              <p style="text-align: center" class="mt-3">Выбери доступное время</p>
               <div class="form-group mt-3">
                 <select
                         id="signup"
