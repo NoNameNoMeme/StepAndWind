@@ -3049,3 +3049,34 @@ h6 {
   flex-wrap: wrap;
   gap: 10px;
 }
+
+.fest-end {
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+.black-back {
+  min-height: 100vh;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black-back__text {
+  font-family: "Bebas Neue", "Raleway", sans-serif;
+  font-size: 110px;
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .black-back__text {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .black-back__text {
+    font-size: 50px;
+  }
+}
